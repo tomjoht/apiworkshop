@@ -1,0 +1,7 @@
+EventBrite event: https://www.eventbriteapi.com/v3/events/14635401881/?token=C4QTGZP64YS5ITN4JSPM
+
+Klout score: http://api.klout.com/v2/user.json/1134760/score?key=urgey4a79n5x6df6xx4p64dr&callback=?
+
+Klout influencers: http://api.klout.com/v2/user.json/1134760/influence?key=urgey4a79n5x6df6xx4p64dr&callback=?
+
+Flickr photo galler: https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=c962d7440cbbfd61785c0952cba8032e&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1
