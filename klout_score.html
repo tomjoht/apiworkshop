@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+
+<script>
+      var url = "http://api.klout.com/v2/user.json/1134760/score?key=urgey4a79n5x6df6xx4p64dr&callback=?";
+    $.getJSON( url, function( data ) {
+    	console.log(data);
+       $("#kloutScore").append(data.score);
+});
+
+ 
+</script>
+<h2>My Score</h2>
+
+<div id="kloutScore"/>
+
+</body>
+</html>
+
+
+
