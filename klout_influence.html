@@ -1,0 +1,24 @@
+<html>
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<script>
+ // get influencees
+     var url = "http://api.klout.com/v2/user.json/1134760/influence?key=u4r7nd3r7bj9ksxfx3cuy6hw&callback=?";
+    $.getJSON( url, function( data ) {
+    	console.log(data);
+
+    $.each( data.myInfluencees, function( i, inf ) {
+    $("#kloutInf").append('<li><a href="http://twitter.com/'+inf.entity.payload.nick + '">' + inf.entity.payload.nick + '</a></li>');
+
+  });
+});
+</script>
+
+
+<h2>My influencees</h2>
+<ul id="kloutInf"></ul>
+
+</body>
+</html>
