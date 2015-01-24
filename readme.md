@@ -1,3 +1,3 @@
 # Read me
 
-This is where I will put docs for my upcoming **API workshops**.
+This repository contains files for my **API workshops**. See [idratherbewriting.com](http://idratherbewriting.com)or more details.

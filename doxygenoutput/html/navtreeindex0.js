@@ -1,0 +1,20 @@
+var NAVTREEINDEX0 =
+{
+".html":[0,0,0],
+"annotated.html":[0,0],
+"classes.html":[0,1],
+"classjavadoc__tags_1_1_a_c_m_e_smartphone.html":[0,0,0,0],
+"classjavadoc__tags_1_1_a_c_m_e_smartphone.html#a1a4aee664355f0b13af691379cdfdfaa":[0,0,0,0,1],
+"classjavadoc__tags_1_1_a_c_m_e_smartphone.html#a6d7fcb3ecbb9739eedc9117da66baeb7":[0,0,0,0,3],
+"classjavadoc__tags_1_1_a_c_m_e_smartphone.html#aae9e0258093169ee07b3f6485eccad99":[0,0,0,0,2],
+"classjavadoc__tags_1_1_a_c_m_e_smartphone.html#ae52f822ac9c04758fc540b5228ee4f14":[0,0,0,0,0],
+"classjavadoc__tags_1_1_app.html":[0,0,0,1],
+"classjavadoc__tags_1_1_dynamite.html":[0,0,0,2],
+"classjavadoc__tags_1_1_dynamite.html#a7e6c91bfd3dc45bfabda7a66d8f72851":[0,0,0,2,1],
+"classjavadoc__tags_1_1_dynamite.html#aa503ea431c3257ba9adc00ecef61ce8e":[0,0,0,2,0],
+"functions.html":[0,2,0],
+"functions_func.html":[0,2,1],
+"functions_vars.html":[0,2,2],
+"index.html":[],
+"pages.html":[]
+};
