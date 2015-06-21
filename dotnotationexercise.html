@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JSON dot notation practice</title>
+
+
+  <script>
+
+$( document ).ready(function() {
+    
+   var john = {
+    "hair": "brown",
+    "eyes": "green",
+    "shoes": {
+        "brand": "nike",
+        "type": "basketball"
+    },
+    "favcolors": [
+        "azure",
+        "goldenrod"
+    ],
+    "children": [
+        {
+            "child1": "Sarah",
+            "age": 2
+        },
+        {
+            "child2": "Jimmy",
+            "age": 5
+        }
+    ]
+}
+
+  document.getElementById("output").innerHTML = john.children[0].child1; 
+
+});
+
+      
+</script>
+</head>
+<body>
+ 
+  <div id="output"></div>
+  
+</body>
+</html>
