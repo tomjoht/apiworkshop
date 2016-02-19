@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="Peter Gruenbaum's API technical writing course on Udemy is an excellent starting point for learning API documentation. He explores one of the more difficult ...">
+   <meta name="keywords" content=",  ">
+   <title> API technical writing course on Udemy from Peter Gruenbaum, and some thoughts on documenting JSON | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../../../../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../../../../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/">
+    <link rel="stylesheet" href="../../../../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../../../../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../../../../js/toc.js"></script>
+   <script src="../../../../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../../../../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="API technical writing course on Udemy from Peter Gruenbaum, and some thoughts on documenting JSON">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/2015/05/22/api-technical-writing-course-on-udemy/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../../../../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../../../../index.html"><img src="../../../../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../../../../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../../../../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../../../../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../../../../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <h1>API technical writing course on Udemy from Peter Gruenbaum, and some thoughts on documenting JSON</h1>
+<p class="page-meta">
+May 22, 2015 &#8226;
+
+
+<a href="../../../../category-api-doc/index.html">api-doc</a>
+
+
+
+<div class="summary">Peter Gruenbaum's API technical writing course on Udemy is an excellent starting point for learning API documentation. He explores one of the more difficult parts of API documentation, which is describing JSON and XML data structures (usually in responses).</div> 
+
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+<h2>Finally, a course on API doc</h2>
+<p>One of the frequent questions people ask me is where to get more training on API documentation. A few months ago, I published a <a href="http://idratherbewriting.com/2015/01/05/podcast-automating-rest-api-documentation-with-peter-gruenbaum/">podcast with Peter Gruenbaum</a> on automating REST API documentation. Peter has recently published a course on Udemy called <a href="https://www.udemy.com/api-documentation-1-json-and-xml/?couponCode=idrather#/">Learn API Technical Writing: JSON and XML for Writers</a>.</p>
+<p>I highly recommend the course as a starting point for learning API documentation. Although you can find other courses on APIs in general, this is the only course (so far) that really addresses documenting APIs, with technical writers as the target audience.</p>
+<h2>Course details</h2>
+<p>This is the <em>first</em> course from Peter in a series of courses about API documentation. This course focuses on documenting JSON and XML (mainly in responses), and gets into detail about some of the following points:</p>
+<ul>
+<li>Data types </li>
+<li>Objects and arrays in JSON</li>
+<li>Tags and attributes in XML</li>
+<li>Ways to describe the responses in tables</li>
+</ul>
+<p>The course isn't too long. There are also exercises and quizzes to practice what you're learning.</p>
+<h2>Discount code "idrather"</h2>
+<p>You can take the course for $29 instead of $59 by <a href="https://www.udemy.com/api-documentation-1-json-and-xml/?couponCode=idrather#/">using this link</a> (or by entering <b>idrather</b> as the coupon code.</p>
+<h2>In-depth with JSON and XML data</h2>
+<p>I like Peter's approach in this course. It has given me some good ideas on how to structure my <a href="http://lanyrd.com/2015/stc15/sdhdyb/">upcoming API documentation workshop at the STC Summit</a> in Ohio next month.</p>
+<p>Watching Peter's course, I realized that I could dive more deeply into each of the common sections in REST API documentation:</p>
+<ul>
+<li>Descriptions </li>
+<li>Endpoint</li>
+<li>Arguments</li>
+<li>Sample requests</li>
+<li>Sample responses</li>
+<li>Error codes</li>
+</ul>
+<p>In presentations I've given about API documentation, I typically just mention these sections briefly. But now I see that each one of these sections deserves much more attention and exploration.</p>
+<p>In exploring responses, Peter explains the syntax for objects and arrays in JSON and XML, how to format the data in tables, what to look for when documenting them, and more.</p>
+<h2>How to document JSON</h2>
+<p>Documenting JSON data is actually one of the trickier parts of API documentation. Documenting a JSON response is fine if the response is simple, with just a few key-value pairs. But what if you have a JSON object with multiple objects inside objects, numerous levels of nesting, and lengthy and conditional data?</p>
+<p>Peter's main approach is to use tables to document responses. For example, here's a sample JSON response (screenshot from the course):</p>
+<p><img style="border: 1px solid #dedede;" src="../../../../images/jsonresponse-550x291.png" alt="json response" width="550" height="291" class="alignnone size-medium wp-image-22742" /></p>
+<p>Objects are set off with curly braces: <code>{</code> and <code>}</code>. Objects have key-value pairs inside them. In this example, <code>song</code> is an object that contains several key-value pairs. The value for <code>musicians</code> is an array, since it uses brackets (<code>[</code> and <code>]</code>) to list out musicians.</p>
+<h2>Using tables for JSON documentation</h2>
+<p>Peter provides this example as a way to describe the JSON response in documentation:</p>
+<p><img src="../../../../images/jsontable-550x286.png" alt="table approach to documenting json" width="550" height="286" class="alignnone size-medium wp-image-22743" /></p>
+<p>The top level element cell is merged with its adjacent cell. The key-value pairs inside this top-level are put into the second column. Its items appear indented below the top-level item.</p>
+<p>If you consider how JSON responses can get much more complex than this in their structure, you can see some of the challenges you face in documenting this data.</p>
+<p>(Note that JSON isn't just used as a format for responses. Many times you submit requests using JSON format as well. For example, you may configure a server using YML files that contain their information in JSON format. These YML files can include 100+ key-value pairs and a lot of detail.)</p>
+<h2>Challenges with using tables for documenting JSON</h2>
+<p>Tables work all right for documenting JSON, but they can be challenging as well. In a table, it can be hard to distinguish between top-level and sub-level items. The object that contains an object that also contains an object can be confusing to represent.</p>
+<p>If you're using a Word Processing program to manually adjust the table columns, you can perhaps imitate the nesting with the cell merges and indentation. But if you're automating the formatting with HTML, you probably have less control over these column widths.</p>
+<h2>The scrolling-to-definitions approach</h2>
+<p>In my <a href="http://tomjohnson1492.github.io/documentation-theme-jekyll/scroll/">documentation theme for Jekyll</a>, I tried an approach to documenting JSON that uses a jQuery plugin called ScrollTo. You can see it here:</p>
+<p><a href="http://tomjohnson1492.github.io/documentation-theme-jekyll/scroll/"><img src="../../../../images/scrollto-550x310.png" alt="scrollto" width="550" height="310" class="alignnone size-medium wp-image-22744" /></a></p>
+<p>When you click on an item in the JSON table, the right-pane scrolls to the item. I like this approach, though I've not really seen it done in other API documentation sites.</p>
+<p>One problem is that you end up with three scroll bars on one page, which isn't the best design. Additionally, the descriptions in this demo are just paragraphs. Usually you structure the information with more detail (e.g., data type, description, notes, etc.).</p>
+<p>Finally, this approach doesn't allow for easy scanning. It's probably a novel idea with no application.</p>
+<h2>The side-by-side approach</h2>
+<p>In Stripe's API documentation, they try to juxtapose the responses in a right side pane with the documentation in the main window.</p>
+<p><a href="https://stripe.com/docs/api#charge_object"><img src="../../../../images/stripe-550x373.png" alt="stripe" width="550" height="373" class="alignnone size-medium wp-image-22745" /></a></p>
+<p>The idea is that you can see both the description and a sample response at the same time, and just scroll down.</p>
+<p>However, the description doesn't always line up with the sample response. (In some places, child attributes are collapsed to save space.) I'm not sure why some items (such as <code>livemode</code>) aren't documented.</p>
+<h2>The no-need-for-descriptions approach</h2>
+<p>Some sites, like Twitter's API docs, don't seem to describe the items in the JSON response at all. Looking at this <a href="https://dev.twitter.com/rest/reference/post/statuses/retweet/%3Aid">long response for the post status/retweet endpoint</a> in Twitter's API docs, there isn't even an attempt to describe what all the items mean. Maybe they figure most of the items in the response are self-evident?</p>
+<p>Theoretically, each item in the JSON response should be a clearly chosen word that represents what it means in an obvious way. The problem is that lengthy responses increase response times. To reduce the size and increase the speed of the response, developers often resort to shorter terms, sometimes using abbreviations. The shorter the term, the more it needs accompanying documentation.</p>
+<h2>The context-within-tables approach</h2>
+<p>eBay's API takes a little different approach. For each item in the XML response, they give some context about where the item appears.</p>
+<p><a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html"><img src="../../../../images/ebay-550x335.png" alt="ebay" width="550" height="335" class="alignnone size-medium wp-image-22746" /></a></p>
+<p>For example, <code>MinimumAdvertisedPrice</code> is nested inside <code>DiscountPriceInfo</code>, which is nested in <code>Item</code>, which is nested in <code>ItemArray</code>.</p>
+<p><a href="http://developer.ebay.com/Devzone/shopping/docs/CallRef/FindPopularItems.html"><img src="../../../../images/nesting.png" alt="nesting" class="alignnone size-full wp-image-22747" /></a></p>
+<p>It's also interesting how much detail they include for each item. Whereas the Twitter writers appear to omit descriptions, the eBay authors write small novels describing each item in the response.</p>
+<h2>Conclusion</h2>
+<p>You can see that there's a lot of variety in documenting JSON and XML responses. Peter's course helps start the discussion about how to document these types of information.</p>
+
+<div class="socialArea">
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="tomjohnson" data-size="large" data-hashtags="techcomm">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+</div>
+
+<div class="well well-sm">
+	<h3 class="relatedPosts">Related Posts</h3>
+	<ul>
+  
+    <li>
+      <a href="../../../06/18/stc-summit-workshop-and-presentation/index.html">My upcoming workshop and presentation at the STC Summit 2015 in Columbus, Ohio</a>
+    </li>
+  
+    <li>
+      <a href="../../../06/18/avoiding-death-from-sitting-on-your-butt-all-day/index.html">How to avoid early death from sitting down all day</a>
+    </li>
+  
+    <li>
+      <a href="../../../06/17/how-to-authenticate-documentation/index.html">How do you authenticate your documentation?</a>
+    </li>
+  
+</ul>
+	</div>
+<div class="singlePostAds">
+    <script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap_rectangle.png" alt="Madcap Flare" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="/images/ads/adobe_rectangle2.jpg" alt="Adobe" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

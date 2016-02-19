@@ -1,6 +1,30 @@
 This is just a quick text file containing API calls that you can run as sample. For convenience, they contain active functioning API keys.
 
 
+Flickr API 
+
+Key:
+71542c171848da257b3caa214f7ed00f
+
+Secret:
+c9da662b86becdd4
+
+Aeris API
+ID:ByruDorHEne2JB64BhP1k 
+SECRET:uBDNO535gYHULH8mqx3skZmU13EV4nIf4GvB6jhY 
+NAMESPACE:tomapiweather
+
+
+Mashape:
+EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p
+
+
+Eventbrite: 
+token: IO6EB7MM6TSCIL2TIOHC
+
+
+
+
 EventBrite event: https://www.eventbriteapi.com/v3/events/14635401881/?token=C4QTGZP64YS5ITN4JSPM
 
 Klout score: http://api.klout.com/v2/user.json/1134760/score?key=u4r7nd3r7bj9ksxfx3cuy6hw&callback=?

@@ -1,0 +1,1038 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content=" ">
+   <title> 1.9 Access the values from the JSON | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/restapicourse1-9/">
+    <link rel="stylesheet" href="../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/restapicourse1-9/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../js/toc.js"></script>
+   <script src="../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="1.9 Access the values from the JSON">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/restapicourse1-9/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../index.html"><img src="../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+    <h1 class="post-title-main">1.9 Access the values from the JSON</h1>
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    <div class="post-content">
+
+        
+        <div class="seriesContext">
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Documenting REST APIs<span class="caret"></span></button>
+        <ol class="dropdown-menu">
+
+            
+            
+            <li>
+                <a href="../restapicourse/index.html">1.0 Course: Documenting REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-1/index.html">1.1 Introduction to REST API documentation</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-2/index.html">1.2 Using a REST API</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-3/index.html">1.3 Getting the authorization keys</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-4/index.html">1.4 Make a cURL call</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-5/index.html">1.5 Understand cURL more</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-6/index.html">1.6 Submit REST Calls through Postman</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-7/index.html">1.7 Analyze the JSON response</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse1-8/index.html">1.8 Log the JSON response to the console</a>
+            </li>
+            
+            
+            
+            <li class="active"> → 1.9 Access the values from the JSON</li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-0/index.html">2.0 New API to document</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-1/index.html">2.1 Documenting the resource description in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-2/index.html">2.2 Documenting the endpoint definition and method in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-3/index.html">2.3 Documenting parameters in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-4/index.html">2.4 Documenting sample requests in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-5/index.html">2.5 Documenting sample responses in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-6/index.html">2.6 Documenting response and error codes in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-7/index.html">2.7 Documenting code samples in REST APIs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-8/index.html">2.8 Putting it all together</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse2-9/index.html">2.9 Creating the user guide</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../restapicourse3-0/index.html">3.0 Completion</a>
+            </li>
+            
+            
+        </ol>
+    </div>
+</div>
+
+
+
+
+        <h2 id="dot-notation-allows-you-to-access-specific-values-from-the-json-response">Dot notation allows you to access specific values from the JSON response</h2>
+
+<p>Looking back over the weatherdata response, there&#39;s a lot to choose from. But the <code>description</code> element is clearly formatted as the primary data to pull out. To pull out the description and display it on the page, we used dot notation.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">data.query.results.channel.item.description
+</code></pre></div>
+<p>Let&#39;s dive into dot notation a little more.</p>
+
+<h2 id="how-dot-notation-works">How dot notation works</h2>
+
+<p>You use a dot after the object name to access its properties. For example, suppose you have an object called <code>data</code>:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;data&quot;: {
+&quot;name&quot;: &quot;Tom&quot;
+}
+</code></pre></div>
+<p>To access <code>Tom</code>, I would use <code>data.name</code>.</p>
+
+<p>It&#39;s important to note the different levels of nesting so you can trace back the appropriate objects and access the information you want. You access each level down through the object name followed by a dot.</p>
+
+<h2 id="use-square-brackets-to-access-the-values-in-an-array">Use square brackets to access the values in an array</h2>
+
+<p>To access a value in an array, you use square brackets followed by the position number:</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;data&quot; : {
+&quot;items&quot;: [&quot;ball&quot;, &quot;bat&quot;, &quot;glove&quot;]
+}
+</code></pre></div>
+<p>To access glove, you would use <code>data.items[2]</code>.</p>
+
+<p><code>glove</code> is the third item in the array. You start counting at 0.</p>
+
+<h2 id="activity-with-dot-notation">Activity with dot notation</h2>
+
+<p>Create a new file in your text editor and insert the following into it:</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>JSON dot notation practice<span class="nt">&lt;/title&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+
+<span class="nx">$</span><span class="p">(</span> <span class="nb">document</span> <span class="p">).</span><span class="nx">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+
+   <span class="kd">var</span> <span class="nx">john</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">&quot;hair&quot;</span><span class="o">:</span> <span class="s2">&quot;brown&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;eyes&quot;</span><span class="o">:</span> <span class="s2">&quot;green&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;shoes&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;brand&quot;</span><span class="o">:</span> <span class="s2">&quot;nike&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;basketball&quot;</span>
+    <span class="p">},</span>
+    <span class="s2">&quot;favcolors&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="s2">&quot;azure&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;goldenrod&quot;</span>
+    <span class="p">],</span>
+    <span class="s2">&quot;children&quot;</span><span class="o">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;child1&quot;</span><span class="o">:</span> <span class="s2">&quot;Sarah&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;age&quot;</span><span class="o">:</span> <span class="mi">2</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;child2&quot;</span><span class="o">:</span> <span class="s2">&quot;Jimmy&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;age&quot;</span><span class="o">:</span> <span class="mi">5</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+<span class="p">}</span>
+
+  <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s2">&quot;output&quot;</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">john</span><span class="p">.</span><span class="nx">children</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">child1</span><span class="p">;</span> 
+
+<span class="p">});</span>
+
+
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+  <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">&quot;output&quot;</span><span class="nt">&gt;&lt;/div&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>Here we have a JSON object custom-defined as a variable named <code>john</code>. The line that says <code>document.getElementById(&quot;output&quot;).innerHTML</code> will write whatever data we put there to the <code>output1</code> tag on the page.</p>
+
+<p>If you view the page in your browser, you&#39;ll see the page says &quot;Sarah&quot; because we&#39;re accessing this value: <code>john.children[0].child1</code>.</p>
+
+<p>Change <code>john.children[0].child1</code> to display the following: </p>
+
+<ul>
+<li>green</li>
+<li>nike</li>
+<li>goldenrod</li>
+<li>Sarah</li>
+</ul>
+
+<style>#theAnswer2 {display:none;}
+</style>
+
+<script>
+$( document ).ready(function() {
+$( "#viewAnswers2" ).click(function() {
+  $( "#theAnswer2" ).toggle();
+});
+});
+</script>
+
+<p><button id="viewAnswers2" class="btn btn-default" >View answers</button>
+<ul id="theAnswer2">
+<li> green: <code>john.eyes</code></li>
+<li> Nike: <code>john.shoes.brand</code></li>
+<li> goldenrod: <code>john.favcolors[1]</code></li>
+<li> Jimmy: <code>john.children[0].child2</code></li>
+</ul></p>
+
+<h2 id="accessing-the-description-from-the-weather-api">Accessing the description from the Weather API</h2>
+
+<p>Let&#39;s return to the weather API example. Here&#39;s the relevant part of the response that shows the different levels of nesting. I&#39;ve removed the unnecessary content.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text"> &quot;query&quot;:
+ {
+     &quot;results&quot;: {
+         &quot;channel&quot;: {
+             &quot;item&quot;: {
+                 &quot;description&quot;: &quot;\n&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/30.gif\&quot;/&gt;&lt;br /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;&lt;br /&gt;\nPartly Cloudy, 16 C&lt;BR /&gt;\n&lt;BR /&gt;&lt;b&gt;Forecast:&lt;/b&gt;&lt;BR /&gt;\nWed - AM Clouds/PM Sun. High: 22 Low: 13&lt;br /&gt;\nThu - AM Clouds/PM Sun. High: 22 Low: 13&lt;br /&gt;\nFri - AM Clouds/PM Sun. High: 24 Low: 14&lt;br /&gt;\nSat - AM Clouds/PM Sun. High: 24 Low: 15&lt;br /&gt;\nSun - Partly Cloudy. High: 26 Low: 16&lt;br /&gt;\n&lt;br /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Santa_Clara__CA/*http://weather.yahoo.com/forecast/USCA1018_c.html\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;&lt;BR/&gt;&lt;BR/&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)&lt;br/&gt;\n&quot;
+             }
+         }
+     }
+ }
+</code></pre></div>
+<p><code>query</code> contains an object called <code>results</code>, which contains an object called <code>channel</code>, which contains an object called <code>item</code>, which contains an object called <code>description</code>. Objects are set off by curly braces. This is why we access this data by using</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">data.query.results.channel.item.description
+</code></pre></div>
+<h2 id="practice:-get-the-wind-speed-from-the-weather-api-weatherdata-endpoint">Practice: Get the wind speed from the weather API weatherdata endpoint</h2>
+
+<p>Use the correct dot notation to find the wind speed from the weather API&#39;s weatherdata endpoint.</p>
+
+<style>#theAnswer {display:none;}
+</style>
+
+<script>
+$( document ).ready(function() {
+$( "#viewAnswers" ).click(function() {
+  $( "#theAnswer" ).toggle();
+});
+});
+</script>
+
+<p><button id="viewAnswers" class="btn btn-default" >View answers</button>
+<p id="theAnswer"><code>data.query.results.channel.wind.speed</code></p></p>
+
+<h2 id="embedding-the-call-into-our-site">Embedding the call into our site</h2>
+
+<p>At the beginning of the course, I showed an example of where we going. Now let&#39;s revisit this code example and see how it&#39;s put together. Copy the following code into a basic HTML page, or download it from <a href="../files/restapicourse/windcalls.html">here</a>.</p>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;http://code.jquery.com/jquery-2.1.1.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">&quot;stylesheet&quot;</span>  <span class="na">href=</span><span class="s">&#39;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css&#39;</span> <span class="na">rel=</span><span class="s">&#39;stylesheet&#39;</span> <span class="na">type=</span><span class="s">&#39;text/css&#39;</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js&quot;</span><span class="nt">&gt;&lt;/script&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">&quot;utf-8&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;title&gt;</span>Sample Query to get the wind<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+   <span class="nf">#wind_direction</span><span class="o">,</span> <span class="nf">#wind_chill</span><span class="o">,</span> <span class="nf">#wind_speed</span><span class="o">,</span> <span class="nf">#temperature</span><span class="o">,</span> <span class="nf">#speed</span> <span class="p">{</span><span class="k">color</span><span class="o">:</span> <span class="nb">red</span><span class="p">;</span> <span class="k">font-weight</span><span class="o">:</span> <span class="k">bold</span><span class="p">;}</span>
+   <span class="nt">body</span> <span class="p">{</span><span class="k">margin</span><span class="o">:</span><span class="m">20px</span><span class="p">;}</span>
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="nt">&lt;script&gt;</span>
+
+<span class="kd">function</span> <span class="nx">checkWind</span><span class="p">()</span> <span class="p">{</span> 
+
+<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nx">$</span><span class="p">.</span><span class="nx">ajax</span><span class="p">({</span>
+    <span class="nx">url</span><span class="o">:</span> <span class="s1">&#39;https://simple-weather.p.mashape.com/weatherdata?lat=37.354108&amp;lng=-121.955236&#39;</span><span class="p">,</span> 
+    <span class="nx">type</span><span class="o">:</span> <span class="s1">&#39;GET&#39;</span><span class="p">,</span> 
+    <span class="nx">data</span><span class="o">:</span> <span class="p">{},</span> 
+    <span class="nx">dataType</span><span class="o">:</span> <span class="s1">&#39;json&#39;</span><span class="p">,</span>
+    <span class="nx">success</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+      <span class="c1">//</span>
+        <span class="c1">//Change data.source to data.something , where something is whichever part of the object you want returned.</span>
+        <span class="c1">//To see the whole object you can output it to your browser console using:</span>
+        <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">data</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#wind_speed&quot;</span><span class="p">).</span><span class="nx">append</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">channel</span><span class="p">.</span><span class="nx">wind</span><span class="p">.</span><span class="nx">speed</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#wind_direction&quot;</span><span class="p">).</span><span class="nx">append</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">channel</span><span class="p">.</span><span class="nx">wind</span><span class="p">.</span><span class="nx">direction</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#wind_chill&quot;</span><span class="p">).</span><span class="nx">append</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">channel</span><span class="p">.</span><span class="nx">wind</span><span class="p">.</span><span class="nx">chill</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#temperature&quot;</span><span class="p">).</span><span class="nx">append</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">channel</span><span class="p">.</span><span class="nx">units</span><span class="p">.</span><span class="nx">temperature</span><span class="p">);</span>
+        <span class="nx">$</span><span class="p">(</span><span class="s2">&quot;#speed&quot;</span><span class="p">).</span><span class="nx">append</span> <span class="p">(</span><span class="nx">data</span><span class="p">.</span><span class="nx">query</span><span class="p">.</span><span class="nx">results</span><span class="p">.</span><span class="nx">channel</span><span class="p">.</span><span class="nx">units</span><span class="p">.</span><span class="nx">speed</span><span class="p">);</span>
+        <span class="p">},</span>
+    <span class="nx">error</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">err</span><span class="p">)</span> <span class="p">{</span> <span class="nx">alert</span><span class="p">(</span><span class="nx">err</span><span class="p">);</span> <span class="p">},</span>
+    <span class="nx">beforeSend</span><span class="o">:</span> <span class="kd">function</span><span class="p">(</span><span class="nx">xhr</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">xhr</span><span class="p">.</span><span class="nx">setRequestHeader</span><span class="p">(</span><span class="s2">&quot;X-Mashape-Authorization&quot;</span><span class="p">,</span> <span class="s2">&quot;WOyzMuE8c9mshcofZaBke3kw7lMtp1HjVGAjsndqIPbU9n2eET&quot;</span><span class="p">);</span> <span class="c1">// Enter here your Mashape key</span>
+    <span class="p">}</span>
+<span class="p">});</span>  
+<span class="p">}</span>
+<span class="nt">&lt;/script&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">&quot;button&quot;</span> <span class="na">onclick=</span><span class="s">&quot;checkWind()&quot;</span> <span class="na">class=</span><span class="s">&quot;btn btn-danger weatherbutton&quot;</span><span class="nt">&gt;</span>Check wind conditions<span class="nt">&lt;/button&gt;</span>
+
+<span class="nt">&lt;h2&gt;</span>Wind conditions for Santa Clara<span class="nt">&lt;/h2&gt;</span>
+
+<span class="nt">&lt;b&gt;</span>Wind chill: <span class="nt">&lt;/b&gt;&lt;span</span> <span class="na">id=</span><span class="s">&quot;wind_chill&quot;</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;temperature&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;/br&gt;</span>
+<span class="nt">&lt;b&gt;</span>Wind speed: <span class="nt">&lt;/b&gt;&lt;span</span> <span class="na">id=</span><span class="s">&quot;wind_speed&quot;</span><span class="nt">&gt;&lt;/span&gt;</span> <span class="nt">&lt;span</span> <span class="na">id=</span><span class="s">&quot;speed&quot;</span><span class="nt">&gt;&lt;/span&gt;&lt;/br&gt;</span>
+<span class="nt">&lt;b&gt;</span>Wind direction: <span class="nt">&lt;/b&gt;&lt;span</span> <span class="na">id=</span><span class="s">&quot;wind_direction&quot;</span><span class="nt">&gt;&lt;/span&gt;</span>
+
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div>
+<p>There are a couple of ways I changed this code from the default Mashape JS query. First, I integrated jQuery so that I could use the <code>append</code> method rather than <code>innerHTML</code> method from JavaScript. <code>append</code> will add the element you specify, whereas <code>innerHTML</code> replaces the contents of the element. (I think jQuery is also easier to work with.)</p>
+
+<p>I pulled out the wind chill, speed, and direction and wrote them to several ID tags on the page. I also the units for these values as well. There&#39;s also minimal styling. The button style leverages Bootstrap&#39;s button styling.</p>
+
+
+        <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../restapicourse2-0/index.html"><button type="button" class="btn btn-warning">Next: 2.0 New API to document</button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+
+
+        
+        
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="faded"/> 
+<footer>
+
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                &copy;2015 I'd Rather Be Writing <img src="../images/orangesquaresmall.png"/> . All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

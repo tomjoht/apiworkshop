@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content=",  ">
+   <title> DITA: Author in Markdown, publish with DITA | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/md2html2ditav2/">
+    <link rel="stylesheet" href="../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/md2html2ditav2/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../js/toc.js"></script>
+   <script src="../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="DITA: Author in Markdown, publish with DITA">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/md2html2ditav2/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../index.html"><img src="../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+   <h1 class="post-title-main">DITA: Author in Markdown, publish with DITA</h1>
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    <div class="post-content">
+
+   
+
+  <h1 class="title topictitle1">DITA: Author in Markdown, publish with DITA</h1>
+<div class="body">
+<p class="shortdesc">Markdown drastically simplifies the authoring process. As long as you don’t need to incorporate <samp class="ph codeph">conref</samp> and other DITA specific tags (which aren’t available in Markdown), you can implement this super simple authoring process.</p>
+<p class="p">This Markdown to DITA process is intended to support a workflow where you begin drafting documentation in Markdown as you gather content. When you're mostly finished authoring content, you can transform it all to DITA and then start working with it there.</p>
+<p class="p">Here's a quick looping video demo:</p>
+<p>  <object width="640" height="360" data="http://idratherbetellingstories.com/wp-content/uploads/markdowntodita.mp4"><param name="src" value="http://idratherbetellingstories.com/wp-content/uploads/markdowntodita.mp4" /><param name="movie" value="http://idratherbetellingstories.com/wp-content/uploads/markdowntodita.mp4" /><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /></object></p>
+<div class="section">
+<h2 class="title sectiontitle">Prerequisites</h2>
+<p class="p">
+<ul class="ul">
+<li class="li">Download and install <a class="xref external" href="http://fletcherpenney.net/multimarkdown/" target="_blank">Multimarkdown from Penny Fletcher</a> .</li>
+<li class="li">Download and install <a class="xref external" href="http://www.ashokgelal.com/lightpaper-for-mac/" target="_blank">LightPaper</a> or some other authoring tool that allows you to create<br />
+          Markdown content.</li>
+<li class="li">Download and install OxygenXML.</li>
+</ul>
+<p class="p note">These instructions are intended for Mac users, but it shouldn't be too hard to do the same on a PC.</p>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">Process Markdown to HTML</h2>
+<p class="p">To automate the conversion from Markdown to HTML:</p>
+<ol class="ol">
+<li class="li">
+<p class="p">Create a folder to store your project files. I’ll call mine <samp class="ph codeph">ditaqrg</samp>.</p>
+</li>
+<li class="li">Create a Markdown file and add it to this folder. Make sure it uses the <samp class="ph codeph">.md<br />
+          </samp>extension.</li>
+<li class="li">
+<p class="p">In this same folder, create a file named ditaqrg.sh (you can choose whatever name you want) and<br />
+            add this code:</p>
+<pre class="pre codeblock"><samp class="ph codeph">multimarkdown -f -b *.md
+cd /Applications/oxygenAuthor_161/frameworks/dita/DITA-OT/plugins/h2d
+ant -Dargs.input=/Users/tjohnson/projects/ditaqrg -Dargs.output=/Users/tjohnson/projects/ditaqrg
+cd /users/tjohnson/projects/ditaqrg
+</samp></pre>
+<p class="p">Change “ditaqrg” to whatever project name you chose to use. You will need to customize the Oxygen<br />
+            h2d path and your input and output directories to match your specific locations. I<br />
+            explain this code in more detail below.</p>
+</li>
+<li class="li">
+<p class="p">Open Terminal and <samp class="ph codeph">cd</samp> to your project folder. </p>
+</li>
+<li class="li">
+<p class="p">Type the following to change the permission to give read/write/execute to the file:</p>
+<pre class="pre codeblock">
+<samp class="ph codeph">chmod ugo+rwx ditaqrg.sh
+</samp>
+</pre>
+<p class="p">
+<samp class="ph codeph">chmod</samp> changes the file permissions. <samp class="ph codeph">ugo</samp> stands for “user, group, others,” (these are the three groups that can access the file) and <samp class="ph codeph">rwx</samp> means “read, write, execute”. Then we list the specific file we want to apply these permissions to (ditaqrg.sh).</p>
+</li>
+<li class="li">
+<p class="p">Type <samp class="ph codeph">ls -l ditaqrg.sh</samp>. Verify that the file now has <samp class="ph codeph">rwxrwxrwx</samp><br />
+            permissions. (The <samp class="ph codeph">-l</samp> adds more detail in the response.)</p>
+</li>
+<li class="li">
+<p class="p">Type <samp class="ph codeph">./projectname.sh</samp> to run the file. </p>
+</li>
+</ol>
+<p class="p">If you look in the folder, you will see your .md files now have corresponding .html and .dita<br />
+        files.</p>
+<div class="note tip"><span class="tiptitle">Tip:</span> Tip: To run the command again in Terminal, press your up arrow key.</div>
+<p class="p">Note that each time you run the script, the Markdown files will overwrite the DITA files. If you don’t want this automated process to keep overwriting the DITA files, remove the Markdown file.</p>
+<div class="p">
+<div class="note warning"><span class="warningtitle">Warning:</span>  If the HTML isn't valid, the DITA file will not be created. This can<br />
+          be somewhat subtle if you already have a DITA file. For example, if you make some edits to<br />
+          the Markdown file that produce invalid HTML, and then you run the script, it may appear to<br />
+          be working if you already have a DITA file there. Check to make sure the updates applied<br />
+          correctly.</div>
+</p></div>
+</div>
+<div class="section">
+<h2 class="title sectiontitle">Code explanation</h2>
+<p class="p">The heart of this transformation lies with this script:</p>
+<div class="p">
+<pre class="pre codeblock">multimarkdown -f -b *.md
+cd /Applications/oxygenAuthor_161/frameworks/dita/DITA-OT/plugins/h2d
+ant -Dargs.input=/Users/tjohnson/projects/ditaqrg -Dargs.output=/Users/tjohnson/projects/ditaqrg
+cd /users/tjohnson/projects/ditaqrg</pre>
+</p></div>
+<p class="p">What is this code doing? I’ll go through it line by line. </p>
+<pre class="pre codeblock">multimarkdown -f -b *.md</pre>
+<p class="p">First, the <samp class="ph codeph">multimarkdown</samp> line will process your Markdown files into HTML<br />
+        by running the Fletcher script. The <samp class="ph codeph">-f</samp> parameter says to create a full<br />
+        header in the HTML document. This means the HTML files will include the following:</p>
+<pre class="pre codeblock">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"/&gt;
+&lt;/head&gt;
+&lt;body</pre>
+<p class="p">This is necessary for the ant scripts to run. The <samp class="ph codeph">-b</samp> runs a batch<br />
+        conversion, so it will process all files in the folder. The <samp class="ph codeph">*.md</samp> restricts<br />
+        the conversion to any files with an .md extension, which is the traditional file extension<br />
+        for Markdown files.</p>
+<pre class="pre codeblock">cd /Applications/oxygenAuthor_161/frameworks/dita/DITA-OT/plugins/h2d</pre>
+<p class="p">Now the script changes to the <samp class="ph codeph">h2d</samp> directory. In this directory, you have a<br />
+        build.xml file supplied by OxygenXML that will convert your content from HTML to DITA.<br />
+        Customize this path to match your own OxygenXML installation directory. </p>
+<pre class="pre codeblock">ant -Dargs.input=/Users/tjohnson/projects/ditaqrg -Dargs.output=/Users/tjohnson/projects/ditaqrg</pre>
+<p class="p">On this line, <samp class="ph codeph">ant</samp> specifies input arguments for the HTML to DITA<br />
+        transformation. </p>
+<p class="p">Note that you must have an HTML file in the input directory for the script to work. If you<br />
+        don’t, you’ll see a message that says “build failed - could not create temp directory.” You<br />
+        don’t need to manually create the temp directory – just put an HTML in the input<br />
+        directory.</p>
+<p class="p">If your HTML file were in this h2d folder, and your Terminal location was at the h2d folder<br />
+        path, you would now only need to type <samp class="ph codeph">ant</samp> in the command line, and the<br />
+        build.xml file also located in this same folder would run the h2d transform to convert the<br />
+        HTML file to a DITA topic type. That’s how ant works – when you type <samp class="ph codeph">ant</samp> on<br />
+        the command line, it looks for a build.xml file in that same folder and executes the build<br />
+        file using the default arguments of the build.xml file.</p>
+<p class="p">However, it’s unlikely that you want to store all your Markdown files and HTML files in<br />
+        this deeply nested Oxygen installation directory. In this example, we add some arguments to<br />
+        the ant parameter to specify a different input and output directory from the default<br />
+        settings.</p>
+<p class="p">
+<p class="p">The <samp class="ph codeph">-Dargs.input</samp> specifies the directory containing the files you want to<br />
+        transform. If you point to the directory, all Markdown files in that directory will be<br />
+        processed. If you point to a specific file, only that file will be processed.</p>
+<p class="p">The <samp class="ph codeph">-Dargs.output</samp> specifies the output directory for the transformed<br />
+        files. In this case, I want them to be output to the same directory as the Markdown<br />
+        files.</p>
+<p class="p">There’s another argument you might want to add: <samp class="ph codeph">Dargs.infotype</samp>. This<br />
+        argument specifies the topic type to convert the HTML into. Options here include<br />
+          <samp class="ph codeph">topic</samp>, <samp class="ph codeph">task</samp>, <samp class="ph codeph">concept</samp>, or<br />
+          <samp class="ph codeph">reference</samp>. The default (if you don’t specify the option) is<br />
+          <samp class="ph codeph">topic</samp>. So you actually don’t need this argument if you’re just converting<br />
+        to topics, which is what I recommend.</p>
+<p class="p">There’s are some more arguments to be aware of:<br />
+        <samp class="ph codeph">args.include.subdirs=“yes”</samp>. This argument says to look in subdirectories<br />
+        for files. I don’t use subdirectories to organize my DITA files (except for images), so this<br />
+        argument isn’t that relevant. If you don’t specify this argument, the default value is<br />
+        “no”.</p>
+<p class="p">Two other arguments include the default language and the XSL file. The arguments are<br />
+        defined in <a class="xref external" href="http://dita-ot.sourceforge.net/1.5.2/readme/DITA-h2d-ant.html" target="_blank">Migrating HTML to DITA with Ant script</a>. Note that in<br />
+        that article, it shows the following:</p>
+<pre class="pre codeblock">
+<samp class="ph codeph">ant -Dargs.input={file|direcotry} -Dargs.output={direcotry} -Dargs.infotype={topic|concept|task|reference}
+</samp>
+</pre>
+<p class="p">The "direcotry" misspellings are not mine. Also, the file never explains that<br />
+        "{file|directory}" means you can enter either the file <em class="ph i">or</em> directory, and also that<br />
+        you omit the <samp class="ph codeph">{}</samp> tags.</p>
+<pre class="pre codeblock">cd /users/tjohnson/projects/ditaqrg</pre>
+<p class="p">After the script runs, we return to the same directory we were in at the beginning. You can<br />
+        type <samp class="ph codeph">ls</samp> to list the contents of the directory. You will then see a .dita<br />
+        file corresponding to each HTML file in the directory. If you group your files by kind, you<br />
+        won’t see the files in triplicate as you browse them.</p>
+</p></div>
+<div class="section">
+<h2 class="title sectiontitle">Limitations</h2>
+<p class="p">You can’t use DITA markup within Markdown and have it survive the transforms. For example, if you put a <samp class="ph codeph">note</samp> element in your Markdown script, it will not survive the conversion to DITA.</p>
+</div>
+</div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../toc_publishing/index.html" title="This section contains various tips related to publishing.">Publishing</a></div>
+</div>
+</div>
+
+
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+
+   <!-- Footer -->
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="faded"/> 
+<footer>
+
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                &copy;2015 I'd Rather Be Writing <img src="../images/orangesquaresmall.png"/> . All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

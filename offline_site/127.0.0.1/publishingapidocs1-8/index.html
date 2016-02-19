@@ -1,0 +1,1076 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content=" ">
+   <title> 1.8 Static site generators | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/publishingapidocs1-8/">
+    <link rel="stylesheet" href="../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/publishingapidocs1-8/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../js/toc.js"></script>
+   <script src="../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="1.8 Static site generators">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/publishingapidocs1-8/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../index.html"><img src="../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+    <h1 class="post-title-main">1.8 Static site generators</h1>
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    <div class="post-content">
+
+        
+
+        <div class="seriesContext">
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Publishing API documentation<span class="caret"></span></button>
+        <ol class="dropdown-menu">
+
+            
+            
+            <li>
+                <a href="../publishingapidocs/index.html">1.0 Publishing API docs</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-1/index.html">1.1 Breaking down API doc</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-2/index.html">1.2 If developers will write...</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-3/index.html">1.3 Generating Reference Doc from Source (Miredot)</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-4/index.html">1.4 Github wikis and Markdown</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-5/index.html">1.5 Custom scripts</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-6/index.html">1.6 Spec-generated doc (Swagger)</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-7/index.html">1.7 API Blueprint</a>
+            </li>
+            
+            
+            
+            <li class="active"> → 1.8 Static site generators</li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-9/index.html">1.9 Custom UX solutions</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-0/index.html">2.0 Doc-only publishing platforms (readme.io)</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-1/index.html">2.1 Help authoring tools</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-2/index.html">2.2 Design patterns</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-3/index.html">2.3 Design pattern: Structure and templates</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-4/index.html">2.4 Website platform</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-5/index.html">2.5 Abundant code samples</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-6/index.html">2.6 Long-ish pages</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-7/index.html">2.7 API Interactivity</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-8/index.html">2.8 Challenging factors</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-9/index.html">2.9 Tools versus content</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs3-0/index.html">3.0 Conclusion</a>
+            </li>
+            
+            
+        </ol>
+    </div>
+</div>
+
+        <h2 id="what-are-static-site-generators">What are static site generators</h2>
+
+<p>Static site generators are a breed of website compilers that package up a group of files (usually written in Markdown) and make them into a website. There are more than 350 different static site generators. You can browse them at <a href="http://www.staticgen.com/">staticgen.com</a>.</p>
+
+<p>Jekyll is one of the most popular static site generators. All of my help content is on Jekyll. You can publish a fully functional tech comm website that includes content re-use, conditional filtering, variables, PDF output, and everything else you might need as a technical writer.</p>
+
+<h2 id="static-site-generators-give-you-a-flexible-web-platform">Static site generators give you a flexible web platform</h2>
+
+<p>Static site generators give you a lot of flexibility. They&#39;re a good choice if you need a lot of flexibility and control over your site. You&#39;re not just plugging into an existing API documentation framework or architecture. You define your own templates and structure things however you want.</p>
+
+<p>With static site generators, you can do the following:</p>
+
+<ul>
+<li>Write in a text editor</li>
+<li>Create custom templates for documentation</li>
+<li>Use a revision control repository workflow</li>
+<li>Customize the look and feel of the output</li>
+<li>Insert JavaScript and other code directly on the page</li>
+</ul>
+
+<h2 id="publish-the-surfreport-in-a-jekyll-theme">Publish the surfreport in a Jekyll theme</h2>
+
+<p>In this activity, you&#39;ll publish an endpoint in a Jekyll theme.</p>
+
+<p>The <a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme">Aviator API documentation theme</a> by Cloud Cannon is designed for REST APIs. You&#39;ll use this theme to input a new endpoint. If you&#39;re continuing on from the previous course (Documenting REST APIs), you already have a new endpoint called surfreport.</p>
+
+<p><a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img src="../images/publishingapidocs/aviatortheme.png" alt="Cloud Cannon Aviator theme" /></a></p>
+
+<p>If you&#39;re on a Mac (with Rubygems and Jekyll installed), building Jekyll sites is a lot simpler. But even if you&#39;re on Windows, it won&#39;t matter for this tutorial. You&#39;ll be using CloudCannon, a SaaS website builder product, to build the Jekyll files.</p>
+
+<h3 id="a.-download-the-jekyll-aviator-theme">a. Download the Jekyll Aviator theme</h3>
+
+<ol>
+<li><p>Go to <a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme">Aviator API documentation theme</a> and click the <strong>Download ZIP</strong> button.</p>
+
+<p><a href="https://github.com/CloudCannon/Aviator-Jekyll-Theme"><img src="../images/publishingapidocs/gitdownloadzip.png" alt="Download ZIP button for Aviator theme" /></a></p></li>
+<li><p>Unzip the files. </p></li>
+</ol>
+
+<h3 id="b.-add-the-weatherdata-endpoint-doc-to-the-theme">b. Add the weatherdata endpoint doc to the theme</h3>
+
+<ol>
+<li><p>Browse to the theme&#39;s files. In the _api folder, open 1_1_books_list.md in a text editor and look at the format. </p>
+
+<p>In every Jekyll file, there&#39;s some &quot;frontmatter&quot; at the top. The frontmatter section has three dashes before and after it. </p>
+
+<p>The frontmatter is formatted in a syntax called YML. YML is similar to JSON but uses spaces and hyphens instead of curly braces. This makes it more human readable.</p></li>
+<li><p>Create a new file called 1-6_weatherdata.md and save it the same _api folder. </p></li>
+<li><p>Get the data from the weatherdata endpoint from this <a href="https://www.mashape.com/fyhao/weather-13#weatherdata">Weather API on Mashape</a>. (This is an API we worked with extensively in the <a href="../restapicourse/index.html">REST API course</a>previous course (Documenting REST APIs).) Put the data from this endpoint into the Aviator theme&#39;s template.</p>
+
+<p>The Aviator Jekyll theme has a specific layout that will be applied to all the files inside the _api folder (these files are called a collection). Jekyll will access these values by going to api.title, api.type, and so forth. It will then push this content into the template (which you can see by going to _layouts/multi.md). </p>
+
+<p>Here&#39;s what my 1-6_weatherdata.md file looks like. Be sure to put the response within square brackets, indented with one tab (4 spaces). You can also <a href="../files/publishingapidocs/1-6_weatherdata.md">download the file here</a>. Remove the <code>raw</code> and <code>endraw</code> tags at the beginning and end of the code sample (which I had to add to keep Jekyll from trying to process it.)</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">---
+title: /weatherdata
+type: get
+description: Get weather forecast by Latitude and Longitude. 
+parameters:
+  title: Weatherdata parameters
+  data:
+    - lat:
+      - string
+      - Required. Latitude.
+    - lng:
+      - string
+      - Required. Longitude.
+right_code:
+  return: |
+---
+title: /weatherdata
+type: get
+description: Get weather forecast by Latitude and Longitude. 
+parameters:
+  title: Weatherdata parameters
+  data:
+    - lat:
+      - string
+      - Required. Latitude.
+    - lng:
+      - string
+      - Required. Longitude.
+right_code:
+  return: |
+    [
+    {
+    &quot;query&quot;: {
+    &quot;count&quot;: 1,
+    &quot;created&quot;: &quot;2014-05-03T03:57:53Z&quot;,
+    &quot;lang&quot;: &quot;en-US&quot;,
+    &quot;results&quot;: {
+      &quot;channel&quot;: {
+        &quot;title&quot;: &quot;Yahoo! Weather - Tebrau, MY&quot;,
+        &quot;link&quot;: &quot;http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html&quot;,
+        &quot;description&quot;: &quot;Yahoo! Weather for Tebrau, MY&quot;,
+        &quot;language&quot;: &quot;en-us&quot;,
+        &quot;lastBuildDate&quot;: &quot;Sat, 03 May 2014 11:00 am MYT&quot;,
+        &quot;ttl&quot;: &quot;60&quot;,
+        &quot;location&quot;: {
+          &quot;city&quot;: &quot;Tebrau&quot;,
+          &quot;country&quot;: &quot;Malaysia&quot;,
+          &quot;region&quot;: &quot;&quot;
+        },
+        &quot;units&quot;: {
+          &quot;distance&quot;: &quot;km&quot;,
+          &quot;pressure&quot;: &quot;mb&quot;,
+          &quot;speed&quot;: &quot;km/h&quot;,
+          &quot;temperature&quot;: &quot;C&quot;
+        },
+        &quot;wind&quot;: {
+          &quot;chill&quot;: &quot;32&quot;,
+          &quot;direction&quot;: &quot;170&quot;,
+          &quot;speed&quot;: &quot;4.83&quot;
+        },
+        &quot;atmosphere&quot;: {
+          &quot;humidity&quot;: &quot;66&quot;,
+          &quot;pressure&quot;: &quot;982.05&quot;,
+          &quot;rising&quot;: &quot;0&quot;,
+          &quot;visibility&quot;: &quot;9.99&quot;
+        },
+        &quot;astronomy&quot;: {
+          &quot;sunrise&quot;: &quot;6:57 am&quot;,
+          &quot;sunset&quot;: &quot;7:06 pm&quot;
+        },
+        &quot;image&quot;: {
+          &quot;title&quot;: &quot;Yahoo! Weather&quot;,
+          &quot;width&quot;: &quot;142&quot;,
+          &quot;height&quot;: &quot;18&quot;,
+          &quot;link&quot;: &quot;http://weather.yahoo.com&quot;,
+          &quot;url&quot;: &quot;http://l.yimg.com/a/i/brand/purplelogo//uh/us/news-wea.gif&quot;
+        },
+        &quot;item&quot;: {
+          &quot;title&quot;: &quot;Conditions for Tebrau, MY at 11:00 am MYT&quot;,
+          &quot;lat&quot;: &quot;1.58&quot;,
+          &quot;long&quot;: &quot;103.74&quot;,
+          &quot;link&quot;: &quot;http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html&quot;,
+          &quot;pubDate&quot;: &quot;Sat, 03 May 2014 11:00 am MYT&quot;,
+          &quot;condition&quot;: {
+            &quot;code&quot;: &quot;28&quot;,
+            &quot;date&quot;: &quot;Sat, 03 May 2014 11:00 am MYT&quot;,
+            &quot;temp&quot;: &quot;32&quot;,
+            &quot;text&quot;: &quot;Mostly Cloudy&quot;
+          },
+          &quot;description&quot;: &quot;\n&lt;img src=\&quot;http://l.yimg.com/a/i/us/we/52/28.gif\&quot;/&gt;&lt;br /&gt;\n&lt;b&gt;Current Conditions:&lt;/b&gt;&lt;br /&gt;\nMostly Cloudy, 32 C&lt;BR /&gt;\n&lt;BR /&gt;&lt;b&gt;Forecast:&lt;/b&gt;&lt;BR /&gt;\nSat - Scattered Thunderstorms. High: 32 Low: 26&lt;br /&gt;\nSun - Thunderstorms. High: 33 Low: 27&lt;br /&gt;\nMon - Scattered Thunderstorms. High: 32 Low: 26&lt;br /&gt;\nTue - Thunderstorms. High: 32 Low: 26&lt;br /&gt;\nWed - Scattered Thunderstorms. High: 32 Low: 27&lt;br /&gt;\n&lt;br /&gt;\n&lt;a href=\&quot;http://us.rd.yahoo.com/dailynews/rss/weather/Tebrau__MY/*http://weather.yahoo.com/forecast/MYXX0004_c.html\&quot;&gt;Full Forecast at Yahoo! Weather&lt;/a&gt;&lt;BR/&gt;&lt;BR/&gt;\n(provided by &lt;a href=\&quot;http://www.weather.com\&quot; &gt;The Weather Channel&lt;/a&gt;)&lt;br/&gt;\n&quot;,
+          &quot;forecast&quot;: [
+            {
+              &quot;code&quot;: &quot;38&quot;,
+              &quot;date&quot;: &quot;3 May 2014&quot;,
+              &quot;day&quot;: &quot;Sat&quot;,
+              &quot;high&quot;: &quot;32&quot;,
+              &quot;low&quot;: &quot;26&quot;,
+              &quot;text&quot;: &quot;Scattered Thunderstorms&quot;
+            },
+            {
+              &quot;code&quot;: &quot;4&quot;,
+              &quot;date&quot;: &quot;4 May 2014&quot;,
+              &quot;day&quot;: &quot;Sun&quot;,
+              &quot;high&quot;: &quot;33&quot;,
+              &quot;low&quot;: &quot;27&quot;,
+              &quot;text&quot;: &quot;Thunderstorms&quot;
+            },
+            {
+              &quot;code&quot;: &quot;38&quot;,
+              &quot;date&quot;: &quot;5 May 2014&quot;,
+              &quot;day&quot;: &quot;Mon&quot;,
+              &quot;high&quot;: &quot;32&quot;,
+              &quot;low&quot;: &quot;26&quot;,
+              &quot;text&quot;: &quot;Scattered Thunderstorms&quot;
+            },
+            {
+              &quot;code&quot;: &quot;4&quot;,
+              &quot;date&quot;: &quot;6 May 2014&quot;,
+              &quot;day&quot;: &quot;Tue&quot;,
+              &quot;high&quot;: &quot;32&quot;,
+              &quot;low&quot;: &quot;26&quot;,
+              &quot;text&quot;: &quot;Thunderstorms&quot;
+            },
+            {
+              &quot;code&quot;: &quot;38&quot;,
+              &quot;date&quot;: &quot;7 May 2014&quot;,
+              &quot;day&quot;: &quot;Wed&quot;,
+              &quot;high&quot;: &quot;32&quot;,
+              &quot;low&quot;: &quot;27&quot;,
+              &quot;text&quot;: &quot;Scattered Thunderstorms&quot;
+            }
+          ],
+          &quot;guid&quot;: {
+            &quot;isPermaLink&quot;: &quot;false&quot;,
+            &quot;content&quot;: &quot;MYXX0004_2014_05_07_7_00_MYT&quot;
+          }
+        }
+      }
+    }
+    }
+    }
+    ]
+---
+
+&lt;div class=&quot;code-viewer&quot;&gt;
+
+&lt;pre data-language=&quot;cURL&quot;&gt;
+curl --get --include &#39;https://simple-weather.p.mashape.com/weatherdata?lat=1.0&amp;lng=1.0&#39; \
+  -H &#39;X-Mashape-Key: EF3g83pKnzmshgoksF83V6JB6QyTp1cGrrdjsnczTkkYgYrp8p&#39; \
+  -H &#39;Accept: application/json&#39;
+  &lt;/pre&gt;
+
+&lt;/div&gt;
+
+---
+</code></pre></div></li>
+</ol>
+
+<h3 id="c.-publish-your-jekyll-project-on-cloudcannon">c. Publish your Jekyll project on CloudCannon</h3>
+
+<p>In this example, we&#39;ll use CloudCannon to build and publish the Jekyll site. </p>
+
+<ol>
+<li>Go to <a href="http://cloudcannon.com">http://cloudcannon.com</a> and sign up for a free test account by clicking <strong>Sign Up</strong></li>
+<li>After signing up and logging in, click <strong>Create Site</strong>.</li>
+<li>Log in and click <strong>Create Site</strong>.</li>
+<li>Type a name for the site (e.g., Aviator Test) and press your <strong>Enter</strong> key.</li>
+<li><p>Click the <strong>Upload Files</strong> button in the upper-right corner. </p>
+
+<p><img src="../images/publishingapidocs/cloudcannonupload.png" alt="Uploading to Cloud Cannon" /></p></li>
+<li><p>Open your Aviator theme files, select them all, and drag them into the upload file dialog box. (Don&#39;t just drag the Aviator theme folder into CloudCannon).</p></li>
+<li><p>After the files finish uploading (and little green check marks appear next to the files), click the preview link in the upper-left corner:</p>
+
+<p><img src="../images/publishingapidocs/previewlinkcc.png" alt="Preview link" /></p></li>
+<li><p>When prompted for a password for viewing the site to add, add one. </p></li>
+<li><p>Click the preview link to view the site. </p></li>
+</ol>
+
+<p>The site should appear as follows:</p>
+
+<p><img src="../images/publishingapidocs/weatherdataendpointcloudcannon.png" alt="CloudCannon Weatherdata endpoint" /></p>
+
+<p>You can see my site at <a href="http://delightful-nightingale.cloudvent.net/">http://delightful-nightingale.cloudvent.net/</a>. The password is <code>stcsummit</code>.</p>
+
+<p>If your endpoint doesn&#39;t appear, you probably have invalid YML syntax. Make sure the left edge of the response is at least one tab (4 spaces) in.</p>
+
+<p>Each time you save the site, CloudCannon actually rebuilds the Jekyll files into the site that you see.</p>
+
+<p>If you switch between the code editor and visual display, the code sample gets mangled. (The CloudCannon editor will convert the https path into a link.) This is a bug in CloudCannon that will be fixed. </p>
+
+<h2 id="what&#39;s-cool-about-cloudcannon-and-jekyll">What&#39;s cool about CloudCannon and Jekyll</h2>
+
+<p>Jekyll is a good solution because it provides near infinite flexibility and fits well within the UX web stack. </p>
+
+<p>CloudCannon provides an easy way to allow subject matter experts to author and edit content, since CloudCanonn allows you to create editable regions within your Jekyll theme. This would allow a tools team to  maintain the site while providing areas for less technical people to author content.</p>
+
+<p>However, CloudCannon wouldn&#39;t be a good solution if your docs require authentication in a highly secure environment. Additionally, Jekyll only provide static HTML files. If you want users to log in, and then personalize what they see when logged in, Jekyll won&#39;t provide this experience.</p>
+
+
+        <p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="../publishingapidocs1-9/index.html"><button type="button" class="btn btn-warning">Next: 1.9 Custom UX solutions</button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+        
+        
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="faded"/> 
+<footer>
+
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                &copy;2015 I'd Rather Be Writing <img src="../images/orangesquaresmall.png"/> . All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content=" ">
+   <title> 1.1 Breaking down API doc | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/publishingapidocs1-1/">
+    <link rel="stylesheet" href="../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/publishingapidocs1-1/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../js/toc.js"></script>
+   <script src="../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="1.1 Breaking down API doc">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/publishingapidocs1-1/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../index.html"><img src="../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+    <h1 class="post-title-main">1.1 Breaking down API doc</h1>
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    <div class="post-content">
+
+        
+
+        <div class="seriesContext">
+    <div class="btn-group">
+        <button type="button" data-toggle="dropdown" class="btn btn-warning dropdown-toggle">Publishing API documentation<span class="caret"></span></button>
+        <ol class="dropdown-menu">
+
+            
+            
+            <li>
+                <a href="../publishingapidocs/index.html">1.0 Publishing API docs</a>
+            </li>
+            
+            
+            
+            <li class="active"> → 1.1 Breaking down API doc</li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-2/index.html">1.2 If developers will write...</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-3/index.html">1.3 Generating Reference Doc from Source (Miredot)</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-4/index.html">1.4 Github wikis and Markdown</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-5/index.html">1.5 Custom scripts</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-6/index.html">1.6 Spec-generated doc (Swagger)</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-7/index.html">1.7 API Blueprint</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-8/index.html">1.8 Static site generators</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs1-9/index.html">1.9 Custom UX solutions</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-0/index.html">2.0 Doc-only publishing platforms (readme.io)</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-1/index.html">2.1 Help authoring tools</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-2/index.html">2.2 Design patterns</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-3/index.html">2.3 Design pattern: Structure and templates</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-4/index.html">2.4 Website platform</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-5/index.html">2.5 Abundant code samples</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-6/index.html">2.6 Long-ish pages</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-7/index.html">2.7 API Interactivity</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-8/index.html">2.8 Challenging factors</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs2-9/index.html">2.9 Tools versus content</a>
+            </li>
+            
+            
+            
+            <li>
+                <a href="../publishingapidocs3-0/index.html">3.0 Conclusion</a>
+            </li>
+            
+            
+        </ol>
+    </div>
+</div>
+
+        <h2 id="api-docs-have-tremendous-variety">API docs have tremendous variety</h2>
+
+<p>Perhaps no other genre of technical documentation has such variety in the outputs as API documentation. Almost every API documentation site looks unique. REST APIs are as diverse as different sites on the web, each with their own branding, navigation, terminology, and style.</p>
+
+<h2 id="no-common-tooling">No common tooling</h2>
+
+<p>Just as websites have a diversity of engines, platforms, and approaches, so too does API documentation. There is no common tooling like there is among GUI documentation. You can&#39;t usually determine what platform is driving the outputs, and often the branding fits in seamlessly with the other company content.</p>
+
+<h2 id="programmableweb.com:-a-directory-of-api-doc-sites">Programmableweb.com: A directory of API doc sites</h2>
+
+<p>For a directory of API documentation sites, see the <a href="http://www.programmableweb.com/apis/directory">Programmableweb.com</a>. You can browse more than 13,000 web APIs.</p>
+
+<p><a href="http://www.programmableweb.com/apis/directory"><img src="../images/publishingapidocs/programmableweb.png" alt="Programmable web directory" /></a></p>
+
+<p>Note that Programmableweb only lists web APIs, meaning APIs that you can access on the web. They don&#39;t list the countless internal, firewalled-off APIs that many companies provide at a cost to paying customers.</p>
+
+<h2 id="a-survey-of-api-documentation-sites">A survey of API documentation sites</h2>
+
+<p>The following are more than about 80 different openly accessible REST APIs that you can browse as a way to look at patterns and examples. Most of these REST API links are available from <a href="http://programmableweb.com">programmableweb.com</a>. I initially started gathering a list of the APIs in Programmableweb&#39;s &quot;Most Popular&quot; category, but then I just started adding links as I ran across interesting APIs.</p>
+
+<ul>
+<li><a href="https://developers.google.com/places/webservice/intro">Google Places API</a></li>
+<li><a href="https://dev.twitter.com/rest/public">Twitter API</a></li>
+<li><a href="https://www.flickr.com/services/api/">Flickr API</a></li>
+<li><a href="https://developers.facebook.com/docs/atlas-api/reference/gettingstarted">Facebook API</a></li>
+<li><a href="https://developers.google.com/youtube/v3/">Youtube API</a></li>
+<li><a href="https://go.developer.ebay.com/api-documentation">eBay API</a></li>
+<li><a href="https://developer.amazon.com/appsandservices/apis">Amazon API</a></li>
+<li><a href="https://www.twilio.com/docs/api">Twilio API</a></li>
+<li><a href="http://www.last.fm/api">Last.fm API</a></li>
+<li><a href="http://www.bing.com/dev/">Bing API</a></li>
+<li><a href="https://delicious.com/developers">Delicious API</a></li>
+<li><a href="https://cloud.google.com/appengine/docs">Google Cloud API</a></li>
+<li><a href="https://developer.foursquare.com/">Foursquare API</a></li>
+<li><a href="https://developers.google.com/gdata/">Google Data API</a></li>
+<li><a href="https://www.dropbox.com/developers/core/docs">Dropbox API</a></li>
+<li><a href="http://dev.splunk.com/restapi">Splunk API</a></li>
+<li><a href="http://developers.flattr.net/api/">Flattr API</a></li>
+<li><a href="https://www.docusign.com/developer-center/documentation">Docusign API</a></li>
+<li><a href="http://www.geonames.org/export/web-services.html">Geonames</a></li>
+<li><a href="https://developers.google.com/adsense/management/">Adsense API</a></li>
+<li><a href="https://developers.box.com/">Box API</a></li>
+<li><a href="http://docs.aws.amazon.com/AWSEC2/latest/APIReference/Welcome.html">Amazon API</a></li>
+<li><a href="https://developer.linkedin.com/">Linkedin API</a></li>
+<li><a href="https://instagram.com/developer/">Instagram API</a></li>
+<li><a href="https://developer.yahoo.com/boss/search/">Yahoo BOSS API</a></li>
+<li><a href="https://developer.yahoo.com/social/rest_api_guide/index.html">Yahoo Social API</a></li>
+<li><a href="https://developers.google.com/analytics/devguides/config/">Google Analytics API</a></li>
+<li><a href="https://www.yelp.com/developers/documentation">Yelp API</a></li>
+<li><a href="http://www.panoramio.com/api/widget/api.html">Panaromio API</a></li>
+<li><a href="https://developers.facebook.com/docs/graph-api">Facebook API</a></li>
+<li><a href="http://api.eventful.com/docs">Eventful API</a></li>
+<li><a href="https://developer.concur.com/docs-and-resources/documentation">Concur API</a></li>
+<li><a href="https://developer.paypal.com/docs/api/">Paypal API</a></li>
+<li><a href="http://dev.bitly.com/">Bitly API</a></li>
+<li><a href="http://www.hostip.info/use.html">Hostip API</a></li>
+<li><a href="http://www.reddit.com/dev/api">Reddit API</a></li>
+<li><a href="https://uwa.netvibes.com/docs/Uwa/html/index.html">Netvibes API</a></li>
+<li><a href="https://developer.rhapsody.com/">Rhapsody API</a></li>
+<li><a href="http://data.donorschoose.org/docs/overview/">Donors Choose</a></li>
+<li><a href="https://sendgrid.com/docs/API_Reference/index.html">Sendgrid API</a></li>
+<li><a href="https://pic.photobucket.com/dev_help/WebHelpPublic/PhotobucketPublicHelp_Left.htm#CSHID=FAQ%2FFAQOverview.htm%7CStartTopic=Content%2FFAQ%2FFAQOverview.htm%7CSkinName=WebHelp">Photobucket API</a></li>
+<li><a href="http://kb.mailchimp.com/api/?utm_source=apidocs&utm_medium=internal_ad&utm_campaign=api_v3">Mailchimp</a></li>
+<li><a href="https://github.com/basecamp/bcx-api/">Basecamp API</a></li>
+<li><a href="https://smugmug.atlassian.net/wiki/display/API/Home">Smugmug API</a></li>
+<li><a href="http://developer.nytimes.com/docs/read/article_search_api_v2">NYTimes API</a></li>
+<li><a href="https://www.usps.com/business/web-tools-apis/track-and-confirm-api.htm">USPS API</a></li>
+<li><a href="http://www.nws.noaa.gov/mdl/survey/pgb_survey/dev/rest.php">NWS API</a></li>
+<li><a href="https://dev.evernote.com/doc/">Evernote API</a></li>
+<li><a href="https://stripe.com/docs/api">Stripe API</a></li>
+<li><a href="https://parse.com/docs/rest/guide">Parse API</a></li>
+<li><a href="https://www.opensecrets.org/resources/create/apis.php">Opensecrets API</a></li>
+<li><a href="https://developer.compete.com/">Compete API</a></li>
+<li><a href="http://api.cnet.com/dashboard.html">CNET API</a></li>
+<li><a href="http://docs.aws.amazon.com/AlexaWebInfoService/latest/">Amazon API</a></li>
+<li><a href="http://developer.hoiio.com/docs/voice_call.html">Hoiio API</a></li>
+<li><a href="http://docs.citygridmedia.com/display/citygridv2/CityGrid+APIs">Citygrid API</a></li>
+<li><a href="https://www.mapbox.com/developers/api/">Mapbox API</a></li>
+<li><a href="https://www.groupon.com/pages/api">Groupon API</a></li>
+<li><a href="http://support.addthis.com/customer/portal/articles/381262-addthis-api-and-sdks">AddThis Menu API</a></li>
+<li><a href="https://developer.yahoo.com/weather/">Yahoo Weather API</a></li>
+<li><a href="http://www.simplyhired.com/a/publishers/overview">SimplyHired API</a></li>
+<li><a href="http://data.crunchbase.com/">Crunchbase API</a></li>
+<li><a href="https://developer.zendesk.com/rest_api/docs/core/introduction">Zendesk API</a></li>
+<li><a href="http://apidocs.ondango.com/rest/sales/get.php">nDango API</a></li>
+<li><a href="http://docs.ninja.is/rest/user.html">Ninja Blocks API</a></li>
+<li><a href="https://pushover.net/api">Pushover API</a></li>
+<li><a href="https://pusher.com/docs">Pusher API</a></li>
+<li><a href="https://www.pingdom.com/resources/api">Pingdom API</a></li>
+<li><a href="http://www.dailymile.com/api/documentation#streams">Daily Mile API</a></li>
+<li><a href="https://developers.jivesoftware.com/api/v3/cloud/rest/">Jive</a></li>
+<li><a href="http://www.ibm.com/smarterplanet/us/en/ibmwatson/developercloud/apis/">IBM Watson (uses Swagger)</a></li>
+<li><a href="https://www.hipchat.com/docs/apiv2">HipChat API</a></li>
+<li><a href="https://developer.bigcommerce.com/api/">Stores API</a></li>
+<li><a href="http://www.alchemyapi.com/api/">Alchemy API</a></li>
+<li><a href="http://docs.indivohealth.org/en/latest/api.html">Indivo API 1.0</a> and <a href="http://docs.indivohealth.org/en/2.0/api.html">Indivo API 2.0</a> on readthedocs platform</li>
+<li><a href="http://dev.socrata.com/">Socrata API</a></li>
+<li><a href="https://developer.github.com/">Github API</a></li>
+<li><a href="https://documentation.mailgun.com/api_reference.html">Mailgun API</a></li>
+<li><a href="https://developer.riotgames.com/api/methods">RiotGames API</a> example of Swagger</li>
+<li><a href="https://github.com/basecamp/bcx-api">Basecamp API</a> example of Github</li>
+</ul>
+
+<h2 id="similar-patterns-and-structures">Similar patterns and structures</h2>
+
+<p>Despite the wide variety of APIs, there is some commonality among them. The common ground is primarily in the endpoint documentation. But user guides have common themes as well. </p>
+
+<h2 id="three-kinds-of-api-doc-content">Three kinds of API doc content</h2>
+
+<p>In a <a href="http://blog.parse.com/learn/engineering/designing-great-api-docs/">blog post by the writers at Parse</a>, they break down API doc content into three main types:</p>
+
+<blockquote>
+<p>Reference: This is the listing of all the functionality in excruciating detail. This includes all datatype and function specs. Your advanced developers will leave this open in a tab all day long.</p>
+
+<p>Guides: This is somewhere between the reference and tutorials. It should be like your reference with prose that explains how to use your API.</p>
+
+<p>Tutorials: These teach your users specific things that they can do with your API, and are usually tightly focused on just a few pieces of functionality. Bonus points if you include working sample code.</blockquote> </p>
+</blockquote>
+
+<p>I think this division of content represents the API documentation genre well and serves as a good guide when strategies ways to publish API documentation.</p>
+
+<p>In Mulesoft&#39;s API platform, you can see many of these sections in their standard template for API documentation:</p>
+
+<p><a href="http://api-portal.anypoint.mulesoft.com/yahoo/api/yahoo-weather-api?ref=apihub"><img src="../images/restapicourse/commonsections.png" alt="Common sections in API documentation" /></a></p>
+
+<h3 id="common-sections-in-guide-docs">Common sections in guide docs</h3>
+
+<p>I won&#39;t get into too much detail about each of these sections. In my previous course, <a href="../restapicourse/index.html">Documenting REST APIs</a>, I explore the content development aspect of API documentation in depth. Here I&#39;ll just list the salient points. </p>
+
+<p>In most API guide articles, you&#39;ll find the following recurring themes:</p>
+
+<ul>
+<li>API Overview</li>
+<li>Getting started</li>
+<li>Authorization keys</li>
+<li>Core concepts</li>
+<li>Rate limits</li>
+<li>Code samples</li>
+<li>Quick reference</li>
+<li>Glossary</li>
+</ul>
+
+<p>Guide articles aren&#39;t autogenerated, and they vary a lot from product to product. When technical writers are involved in API documentation, they&#39;re almost always in charge of this content.</p>
+
+<h2 id="tutorials">Tutorials</h2>
+
+<p>The second genre of content is tutorial articles. Whether it&#39;s called Getting Started, Hello World Tutorial, First Steps, or something else, the point of the tutorial articles is to guide a new developer into creating something simple and immediate with the API. </p>
+
+<p>By showing the developer how to create something from beginning to end, you provide an overall picture of the workflow and necessary steps to getting output with the API. Once a developer can pass the authorization keys correctly, construct a request, and get a response, he or she can start using practically any endpoint in the API.</p>
+
+<p>Here&#39;s a list of tutorials from Parse:</p>
+
+<p><a href="https://www.parse.com/tutorials"><img src="../images/publishingapidocs/parsetutorials.png" alt="Parse tutorials" /></a></p>
+
+<p>Some tutorials can even serve as reference implementations, showing full-scale code that shows how to implement something in a detailed way. This kind of code is highly appealing to developers because it usually helps clarify all the coding details.</p>
+
+<h2 id="reference">Reference</h2>
+
+<p>Finally, reference documentation is probably the most characteristic part of API documentation. Reference documentation is highly structured and templatized. Reference documentation follows common patterns when it comes to describing endpoints. </p>
+
+<p>In most endpoint documentation, you&#39;ll see the following sections:</p>
+
+<ul>
+<li>Resource description</li>
+<li>Endpoint</li>
+<li>Methods</li>
+<li>Parameters</li>
+<li>Request submission example</li>
+<li>Request response example</li>
+<li>Status and error codes</li>
+<li>Code samples</li>
+</ul>
+
+<p>If engineers write anything, it&#39;s usually the endpoint reference material. </p>
+
+<p>Note that the endpoint documentation is never meant to be a starting point. The information is meant to be browsed, and a new developer will need some bacground information about authorization keys and more to use the endpoints.</p>
+
+<p>Here&#39;s a sample page showing endpoints from Instagram&#39;s API: </p>
+
+<p><a href="https://instagram.com/developer/endpoints/relationships/"><img src="../images/publishingapidocs/instagramref.png" alt="Instagram endpoints" /></a></p>
+
+<h2 id="explore-some-of-the-api-doc-sites">Explore some of the API doc sites</h2>
+
+<p>Browse around 5 of more of the API doc sites listed earlier to get a feel for them. In each of the sites, try to find examples of the three types of API documentation:</p>
+
+<ul>
+<li>Guide docs</li>
+<li>Tutorial docs</li>
+<li>Reference docs</li>
+</ul>
+
+
+        <p>
+
+
+
+
+
+
+
+
+<a href="../publishingapidocs1-2/index.html"><button type="button" class="btn btn-warning">Next: 1.2 If developers will write...</button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</p>
+
+
+        
+        
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+    </div>
+
+
+    <!-- Footer -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="faded"/> 
+<footer>
+
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                &copy;2015 I'd Rather Be Writing <img src="../images/orangesquaresmall.png"/> . All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

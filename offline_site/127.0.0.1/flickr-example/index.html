@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content=",  ">
+   <title> Flickr example: Retrieve a Flickr gallery and display it on a web page | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/flickr-example/">
+    <link rel="stylesheet" href="../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/flickr-example/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../js/toc.js"></script>
+   <script src="../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="Flickr example: Retrieve a Flickr gallery and display it on a web page">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/flickr-example/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../index.html"><img src="../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+   <h1 class="post-title-main">Flickr example: Retrieve a Flickr gallery and display it on a web page</h1>
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    <div class="post-content">
+
+   
+
+  <p>In this Flickr API example, you'll see that our goal requires us to call several endpoints. The point is that just having an API reference that lists the endpoints and responses isn't enough. Often one endpoint requires other endpoints, and so on.</p>
+<p>Suppose we want to get all the photos from a <a href="https://www.flickr.com/photos/flickr/galleries/72157647277042064/">specific Flickr gallery</a> and display them on a web page. Here's the gallery we want:</p>
+<p><a href="https://www.flickr.com/photos/flickr/galleries/72157647277042064/"><img src="../images/flickrgallery.png" alt="flickrgallery" width="550" height="293" class="alignnone size-full wp-image-22475" /></a></p>
+<p>From the list of <a href="https://www.flickr.com/services/api/">Flickr's API methods</a>, the <a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html">flickr.galleries.getPhotos</a> is the one that will get photos from a gallery.</p>
+<p><a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html"><img src="../images/flickr_get_photos.png" alt="flickr_get_photos" width="550" height="360" class="alignnone size-full wp-image-22476" /></a></p>
+<p>You can see that each endpoint has some common sections:</p>
+<ul>
+<li>the endpoint</li>
+<li>what it returns</li>
+<li>authentication</li>
+<li>arguments</li>
+<li>example response</li>
+<li>error codes</li>
+<li>API Explorer</li>
+</ul>
+<p>One of the arguments we need is the gallery ID. Before we can use this endpoint, we have to use another endpoint to get the gallery ID, because (rather unintuitively) the gallery ID is <em>not</em> the ID that appears in the URL of the gallery.</p>
+<p>We use the <a href="https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery">flickr.urls.lookupGallery</a> endpoint to get the gallery ID from a gallery URL:</p>
+<p><a href="https://www.flickr.com/services/api/explore/flickr.urls.lookupGallery"><img src="../images/flickr_gallery_id.png" alt="flickr_gallery_id" width="550" height="398" class="alignnone size-full wp-image-22477" /></a></p>
+<p>The API Explorer makes the following call:</p>
+<pre>
+https://api.flickr.com/services/rest/?method=flickr.urls.lookupGallery&api_key={your api key}&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fflickr%2Fgalleries%2F72157647277042064%2F&format=json&nojsoncallback=1
+</pre>
+<p>If you send this request via your browser, you see:</p>
+<p><a href="https://api.flickr.com/services/rest/?method=flickr.urls.lookupGallery&api_key=%7Byour%20api%20key%7D&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fflickr%2Fgalleries%2F72157647277042064%2F&format=json&nojsoncallback=1"><img src="../images/flickr_response.png" alt="flickr_response" width="550" height="384" class="alignnone size-full wp-image-22478" /></a></p>
+<p>Note that I'm using the <a href="https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=en">JSON Formatting extension for Chrome</a> to make the JSON response more readable. Without this plugin, the JSON response is compressed.</p>
+<p>(Also note that the API Explorer feature in the Flickr API docs includes a token in the request beyond the API key. However, I think this <a href="http://stackoverflow.com/questions/10657241/flickr-api-api-key-keeps-getting-invalid">token is temporary and expires</a>, so I omitted it here.)</p>
+<p>The gallery ID is <code>66911286-72157647277042064</code>. We now have the arguments we need for the <a href="https://www.flickr.com/services/api/flickr.galleries.getPhotos.html">flickr.galleries.getPhotos</a> endpoint. If I go to the <a href="https://www.flickr.com/services/api/explore/flickr.galleries.getPhotos">API Explorer for this endpoint</a>, I can plug in the gallery ID.</p>
+<p><a href="https://www.flickr.com/services/api/explore/flickr.galleries.getPhotos"><img src="../images/flickr_gallery_response.png" alt="flickr_gallery_response" width="550" height="259" class="alignnone size-full wp-image-22479" /></a></p>
+<p>Flickr's API Explorer simplifies the process of adding arguments to the endpoint. I can see the response from my request in the API Explorer. Many APIs have an API Explorer tool that makes it easy to construct requests with the parameters configured correctly. However, I can also go to the endpoint auto-generated from the arguments I entered and see the response directly in the browser:</p>
+<pre>
+https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key={your api key}&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1
+</pre>
+<p>Here's the JSON response in the browser:</p>
+<p><a href="https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=c962d7440cbbfd61785c0952cba8032e&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1"><img src="../images/rawjsonflickr-550x460.png" alt="rawjsonflickr" width="550" height="460" class="alignnone size-medium wp-image-22480" /></a></p>
+<p>All the necessary information is included in this response in order to display photos on our site, but it's not entirely intuitive how we construct the image source URLs from the response. Note that, once again, the information a user needs to actually achieve a goal isn't explicit in the API reference documentation. All the reference doc explains is what gets returned in the response, not how to actually use the response.</p>
+<p>The <a href="https://www.flickr.com/services/api/misc.urls.html">Photo Source URLs</a> page in the documentation explains it:</p>
+<blockquote><p>
+You can construct the source URL to a photo once you know its ID, server ID, farm ID and secret, as returned by many API methods.</p>
+<p>The URL takes the following format:</p>
+<pre>https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg
+    or
+https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}_[mstzb].jpg
+    or
+https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{o-secret}_o.(jpg|gif|png)
+</pre>
+</blockquote>
+<p>Here's what an item in the JSON response looks like:</p>
+<pre>
+"photos": {
+  "page": 1,
+  "pages": 1,
+  "perpage": 500,
+  "total": 15,
+  "photo": [
+    {
+     "id": "8432423659",
+     "owner": "37107167@N07",
+     "secret": "dd1b834ec5",
+     "server": "8187",
+     "farm": 9,
+     "title": "Color",
+     "ispublic": 1,
+     "isfriend": 0,
+     "isfamily": 0,
+     "is_primary": 1,
+     "has_comment": 0
+} ...
+</pre>
+<p>You access these fields through dot notation. It's a good idea to log the whole object to the console just to explore it better.</p>
+<h2>Displaying the photos using jQuery</h2>
+<p>The following code uses jQuery to loop through each of the responses and inserts the necessary components into an image tag to display each photo. Usually in documentation you don't need to be so explicit about how to use a common language like jQuery. You assume that the developer is capable in a specific language (just not with your API).</p>
+<p><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>html<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>style<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+img {max-height:125px; margin:3px; border:1px solid #dedede;}<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>/style<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>body<span class="ni">&amp;gt;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span><span class="ni">&amp;lt;</span>script src=<span class="ni">&amp;quot;</span>http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js<span class="ni">&amp;quot;&amp;gt;&amp;lt;</span>/script<span class="ni">&amp;gt;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span><span class="ni">&amp;lt;</span>script<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+// get gallery payload<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+     var url = <span class="ni">&amp;quot;</span>https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos<span class="ni">&amp;amp;</span>api_key={your api key}<span class="ni">&amp;amp;</span>gallery_id=66911286-72157647277042064<span class="ni">&amp;amp;</span>format=json<span class="ni">&amp;amp;</span>nojsoncallback=1<span class="ni">&amp;quot;</span>;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+    $.getJSON( url, function( data ) {<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+// payload gets assigned to data argument, which is logged to console for inspection<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+    	console.log(data);<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>// get title of gallery and append it to a tag on the page<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+$(<span class="ni">&amp;quot;</span>#galleryTitle<span class="ni">&amp;quot;</span>).append(data.photos.photo[0].title + <span class="ni">&amp;quot;</span> Gallery<span class="ni">&amp;quot;</span>);<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>// loop through payload using jQuery each and insert necessary elements into image src url<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+$.each( data.photos.photo, function( i, gp ) {<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>var farmId = gp.farm;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+var serverId = gp.server;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+var id = gp.id;<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+var secret = gp.secret;<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>console.log(farmId + <span class="ni">&amp;quot;</span>, <span class="ni">&amp;quot;</span> + serverId + <span class="ni">&amp;quot;</span>, <span class="ni">&amp;quot;</span> + id + <span class="ni">&amp;quot;</span>, <span class="ni">&amp;quot;</span> + secret);<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>// here&#39;s the format we need to display the images:<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+//  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>$(<span class="ni">&amp;quot;</span>#flickr<span class="ni">&amp;quot;</span>).append(&#39;<span class="ni">&amp;lt;</span>img src=<span class="ni">&amp;quot;</span>https://farm&#39; + farmId + &#39;.staticflickr.com/&#39; + serverId + &#39;/&#39; + id + &#39;_&#39; + secret + &#39;.jpg<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;</span>&#39;);<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span> });<span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+});<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span><span class="ni">&amp;lt;</span>/script<span class="ni">&amp;gt;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span><span class="ni">&amp;lt;</span>h2<span class="ni">&amp;gt;&amp;lt;</span>div id=<span class="ni">&amp;quot;</span>galleryTitle<span class="ni">&amp;quot;&amp;gt;&amp;lt;</span>/div<span class="ni">&amp;gt;&amp;lt;</span>/h2<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>div style=<span class="ni">&amp;quot;</span>clear:both;<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>div id=<span class="ni">&amp;quot;</span>flickr<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;</span><span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span><span class="ni">&amp;lt;</span>/body<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span>
+<span class="ni">&amp;lt;</span>/html<span class="ni">&amp;gt;</span><span class="nt">&lt;br</span> <span class="nt">/&gt;</span></code></pre></div></p>
+<p>And the result looks like this:</p>
+<p><a href="http://idratherbetellingstories.com/wp-content/apidemos/flickr.html"><img src="../images/flickrcolorgallerydemo-550x190.png" alt="flickrcolorgallerydemo" width="550" height="190" class="alignnone size-medium wp-image-22481" /></a></p>
+<p>You can <a href="http://idratherbetellingstories.com/wp-content/apidemos/flickr.html">view the code here</a></p>
+<h2>Code explanation</h2>
+<p>In this code, the <a href="http://api.jquery.com/jquery.getjson/">getJSON</a> method from jQuery gets the JSON payload. The payload is assigned to the <code>data</code> argument and then logged to the console.</p>
+<p>The data object contains an object called <code>photos</code>, which contains an array called <code>photo</code>. The <code>title</code> field is a property in the photo object. The <code>title</code> is accessed through this dot notation: <code>data.photos.photo[0].title</code>.</p>
+<p>To get each item in the object, jQuery's <a href="http://api.jquery.com/jquery.each/">each method</a> loops through an object's properties.</p>
+<p>By the way, the jQuery <code>each</code> method is commonly used for looping through results to get values. Here's how it works. For the first argument (<code>data.photos.photo</code>), you identify the object that you want to access.</p>
+<p>For the <code>function( i, gp )</code> arguments, you list an index and value. You can use any names you want here. <code>gp</code> becomes a variable that refers to the <code>data.photos.photo</code> object you're looping through. <code>i</code> refers to the starting point through the object. (You don't actually need to refer to <code>i</code> beyond the mention here unless you want to begin the loop at a certain point.)</p>
+<p>To access the properties in the JSON object, we use <code>gp.farm</code> instead of <code>data.photos.photo[0].farm</code>, because <code>gp</code> is an object reference to <code>data.photos.photo</code>.</p>
+<p>After the <code>each</code> function iterates through the response, I added some variables make it easier to work with these components (using <code>serverId</code> instead of <code>gp.server</code>, etc.). And a <code>console.log</code> message checks to ensure we're getting values for each of the elements we need:</p>
+<p>This comment shows where we need to plug in each of the variables:</p>
+<p><div class="highlight"><pre><code class="language-html" data-lang="html">//  https://farm{farm-id}.staticflickr.com/{server-id}/{id}_{secret}.jpg</code></pre></div></p>
+<p>The final line shows how you insert those variables into the HTML:</p>
+<p><div class="highlight"><pre><code class="language-html" data-lang="html">$(<span class="ni">&amp;quot;</span>#flickr<span class="ni">&amp;quot;</span>).append(&#39;<span class="ni">&amp;lt;</span>img src=<span class="ni">&amp;quot;</span>https://farm&#39; + farmId + &#39;.staticflickr.com/&#39; + serverId + &#39;/&#39; + id + &#39;_&#39; + secret + &#39;.jpg<span class="ni">&amp;quot;</span>/<span class="ni">&amp;gt;</span>&#39;);</code></pre></div></p>
+
+
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+
+   <!-- Footer -->
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="faded"/> 
+<footer>
+
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                &copy;2015 I'd Rather Be Writing <img src="../images/orangesquaresmall.png"/> . All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

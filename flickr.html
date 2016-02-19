@@ -9,10 +9,18 @@ img {max-height:125px; margin:3px; border:1px solid #dedede;}
 
 <script>
 
- // get gallery payload
-     var url = "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=c962d7440cbbfd61785c0952cba8032e&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1";
-    $.getJSON( url, function( data ) {
-    	console.log(data);
+var settings = {
+  "async": true,
+  "crossDomain": true,
+  "url": "https://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=6bc780cf9c1da860cd081da6c0bf5147&gallery_id=66911286-72157647277042064&format=json&nojsoncallback=1",
+  "method": "GET",
+  "headers": {}
+}
+
+$.ajax(settings).done(function (data) {
+  console.log(data);
+
+
           
 $("#galleryTitle").append(data.photos.photo[0].title + " Gallery");
     	$.each( data.photos.photo, function( i, gp ) {
@@ -29,8 +37,8 @@ console.log(farmId + ", " + serverId + ", " + id + ", " + secret);
 $("#flickr").append('<img src="https://farm' + farmId + '.staticflickr.com/' + serverId + '/' + id + '_' + secret + '.jpg"/>');
 
 
- });
 });
+    	});
 
 </script>
 

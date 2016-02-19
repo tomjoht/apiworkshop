@@ -1,0 +1,18 @@
+{
+  "id": 51231236,
+  "category": {
+    "id": 4,
+    "name": "test"
+  },
+  "name": "mr. fluffernutter",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "string"
+    }
+  ],
+  "status": "available"
+}

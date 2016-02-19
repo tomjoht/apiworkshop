@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="I moved my blog from WordPress to Jekyll because I want to use the same publishing paradigms for both tech comm and the web. Jekyll also loads more quickly.">
+   <meta name="keywords" content=",  engineering workflows">
+   <title> Moved my blog from WordPress to Jekyll | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../../../../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../../../../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/2015/05/29/moved-my-blog-from-wordpress-to-jekyll/">
+    <link rel="stylesheet" href="../../../../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/2015/05/29/moved-my-blog-from-wordpress-to-jekyll/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../../../../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../../../../js/toc.js"></script>
+   <script src="../../../../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../../../../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="Moved my blog from WordPress to Jekyll">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/2015/05/29/moved-my-blog-from-wordpress-to-jekyll/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../../../../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../../../../index.html"><img src="../../../../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../../../../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../../../../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../../../../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../../../../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../../../../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../../../../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <h1>Moved my blog from WordPress to Jekyll</h1>
+<p class="page-meta">
+May 29, 2015 &#8226;
+
+
+<a href="../../../../category-jekyll/index.html">jekyll</a>, 
+
+<a href="../../../../category-wordpress/index.html">wordpress</a>
+
+
+
+<div class="summary">I moved my blog from WordPress to Jekyll because I want to use the same publishing paradigms for both tech comm and the web. Jekyll also loads more quickly.</div> 
+
+
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+<p>After experimenting with Jekyll as a documentation platform for the past several months, I decided to migrate my blog from WordPress to Jekyll. </p>
+
+<p><img src="../../../../images/jekyllrblogo.png" alt="" />   </p>
+
+<p>Although I think WordPress is a nearly perfect blogging platform, and I have extensive knowledge about building sites in WordPress, I still made the switch. </p>
+
+<p>Here are some reasons why I switched:</p>
+
+<h2 id="tired-of-the-split-world-view">Tired of the split world view</h2>
+
+<p>My main reason for switching probably differs from the most common reasons people switch from WordPress to Jekyll. I think that the publishing platforms we use to create technical documentation shouldn&#39;t be different from the publishing platforms we use to publish to the web.</p>
+
+<p>Throughout my career I&#39;ve been using Madcap Flare or MediaWiki or OxygenXML or some other tech comm tool during the day, and then switched to using WordPress to blog in the evenings. Then it&#39;s back to tech comm tools in the morning. </p>
+
+<p>Well, I&#39;m tired of this split paradigm when it comes to publishing. <em>Why should web publishing tools be any different from tech comm publishing tools?</em></p>
+
+<h2 id="wordpress-is-slow">WordPress is slow</h2>
+
+<p>Although WordPress offers 30,000 plugins, allowing you to build nearly anything, there&#39;s a hidden cost to each plugin. If you add more than a dozen plugins on your site, it slows down considerably. </p>
+
+<p>In the past, I&#39;ve tried integrating BuddyPress (WordPress&#39; social network platform) to build more of a community. No matter how many tweaks I made to speed up my site, the load time was around 4-5 seconds. I finally gave up on the community idea.</p>
+
+<p>About a year ago, I made a relentless effort to get my site&#39;s speed down under 2 seconds. I purged every unnecessary plugin I could. I integrated MaxCDN (which creates cached versions of your site, making it static) and WP Total Cache. It worked pretty well (once I finally got the settings right). The load time (about 2 seconds) wasn&#39;t bad at all. </p>
+
+<p>Still, Jekyll sites load pages in about .5 seconds. This load time can increase SEO, since Google ranks sites higher when it can load the pages faster. </p>
+
+<p>Faster loading times also fit better with the way people use the web. People quickly jump from page to page trying to find information. If pages load quickly, you allow users to more easily move around your site and find what they need.</p>
+
+<h2 id="fundamental-delivery-paradigm-of-wp-is-wrong">Fundamental delivery paradigm of WP is wrong</h2>
+
+<p>The fundamental paradigm of WordPress is flawed, I think. In WordPress, your content resides in a database, and your theme files reside in another folder on your server. </p>
+
+<p>When a user makes a request for a page, WordPress&#39;s template tags make a request to the database for the content. The database serves up the content and packages it into the HTML files. The display is then returned to the user.</p>
+
+<p>Why build the site dynamically every time a user makes a page request? This is part of why WP is slow. It makes much more sense to build the entire site one time and then return the pre-built pages. </p>
+
+<p>With Jekyll, you build your site first and then push it out to your server. Each time a user requests a page, there&#39;s no need to make requests to a database to dynamically assemble a site. Your site is all ready to serve. (And there is no database.)</p>
+
+<p>Of course it takes a while to build your site. And interestingly, Movable Type (an earlier competitor to WordPress) died out in part because the build time to recompile your site took a while. </p>
+
+<p>But you can offload the build process to your web host by using <a href="https://pages.github.com/">Github Pages</a>. Github Pages will automatically build your Jekyll site when you commit to your Github repository. Who cares if it takes a few minutes for Jekyll to build your latest commit. Once it&#39;s live, you save a ton of time in delivering your site with each request.</p>
+
+<h2 id="other-reasons">Other reasons</h2>
+
+<p>I have a few other reasons as well: </p>
+
+<ul>
+<li><strong>I want to learn Bootstrap and JavaScript more</strong>. With my Jekyll-based Bootstrap-based theme, I can really dig into this platform more. I can also integrate JS directly on pages (in WP, it&#39;s difficult to use JS on pages).</li>
+<li><strong>WordPress is no longer cool</strong>. It&#39;s become mainstream. Now almost everyone has a WordPress blog. (Not the best reason, I know. But hey, I like trying new things.)</li>
+<li><strong>I&#39;m bored with WordPress</strong>. After using the same platform for 8 years, I&#39;m ready to try a different paradigm.</li>
+<li><strong>I fear the massive hack</strong>. Although I&#39;ve been lucky, people&#39;s WordPress sites get hacked all the time. I fear that my 2,000 posts could go up in a puff of smoke one unfortunate morning. (Of course I have db backups, but the thought that it could so easily get deleted kind of scares me.)</li>
+</ul>
+
+<h2 id="still-a-lot-of-work-to-do">Still a lot of work to do</h2>
+
+<p>Although I&#39;ve migrated the content and gotten most everything working, I still have a lot of work to do. Over the coming months, I&#39;ll be fine-tuning the rest of the implementation. However, I didn&#39;t want to let the fine-tuning get in the way of my blogging. Content is the main reason people to any site.</p>
+
+<div class="socialArea">
+
+    <a href="https://twitter.com/share" class="twitter-share-button" data-via="tomjohnson" data-size="large" data-hashtags="techcomm">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+
+</div>
+
+<div class="well well-sm">
+	<h3 class="relatedPosts">Related Posts</h3>
+	<ul>
+  
+    <li>
+      <a href="../../../06/18/stc-summit-workshop-and-presentation/index.html">My upcoming workshop and presentation at the STC Summit 2015 in Columbus, Ohio</a>
+    </li>
+  
+    <li>
+      <a href="../../../06/18/avoiding-death-from-sitting-on-your-butt-all-day/index.html">How to avoid early death from sitting down all day</a>
+    </li>
+  
+    <li>
+      <a href="../../../06/17/how-to-authenticate-documentation/index.html">How do you authenticate your documentation?</a>
+    </li>
+  
+</ul>
+	</div>
+<div class="singlePostAds">
+    <script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap_rectangle.png" alt="Madcap Flare" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="/images/ads/adobe_rectangle2.jpg" alt="Adobe" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+

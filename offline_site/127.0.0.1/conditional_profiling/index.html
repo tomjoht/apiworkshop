@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+  <head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="description" content="">
+   <meta name="keywords" content="dita,  ">
+   <title> DITA: Conditional profiling | I'd Rather Be Writing </title>
+     <link rel="stylesheet" href="../css/syntax.css"  type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+     <link rel="stylesheet" href="../css/modern-business.css">
+
+    <link rel="canonical" href="http://idratherbewriting.com/conditional_profiling/">
+    <link rel="stylesheet" href="../css/customstyles.css"  type='text/css'>
+    <link rel="canonical" href="http://idratherbewriting.com/conditional_profiling/">
+  <link rel="alternate" type="application/rss+xml" title="" href="http://idratherbewriting.com/feed.xml" />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+   <script src="../js/jquery.navgoco.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+   <script src="../js/toc.js"></script>
+   <script src="../js/customscripts.js"></script>
+   <link rel="shortcut icon" href="favicon.ico.html" type="image/x-icon">
+    <link rel="icon"  href="favicon.ico.html" type="image/x-icon">
+       <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+   <script type="text/javascript" src="../js/signup.js"></script>
+   
+
+   
+
+<meta name="twitter:card" content="summary">
+<meta name="twitter:site" content="@dgwolff">
+<meta name="twitter:creator" content="@dgwolff">
+
+  <meta name="twitter:title" content="DITA: Conditional profiling">
+
+
+  <meta name="twitter:url" content="http://idratherbewriting.com/conditional_profiling/">
+
+
+  <meta name="twitter:description" content="Technical writing blog focusing on the latest trends, news, and other topics in the field of technical communication.">
+
+
+  <meta name="twitter:image:src" content="http://idratherbewriting.com/assets/images/me.png">
+
+
+ 
+
+
+
+
+
+
+  </head>
+
+<body>
+
+   
+<div id="masthead">
+<div class="topBannerAd"><a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHY"><img src="../images/ads/adobe_rectangle2.jpg" alt="Adobe Tech Comm Suite" /></a></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-7">
+
+                <div class="siteLogo"><a href="../index.html"><img src="../images/idratherbewriting-site-logo.png" alt="Home" /></a>
+                            </div>
+
+            </div>
+        </div>
+
+    </div><!-- /cont -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="top-spacer"> </div>
+            </div>
+        </div>
+    </div><!-- /cont -->
+
+</div>
+
+<!-- Navigation -->
+<!-- navbar-fixed-top-->
+<nav class="navbar navbar-inverse" role="banner">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+
+                
+                
+
+                
+                <li><a href="../aboutme/index.html">About</a></li>
+                
+
+                
+
+                
+                <li><a href="../contact/index.html">Contact</a></li>
+                
+
+                
+
+                
+                <li><a href="../presentations/index.html">Presentations</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                
+
+                
+
+                
+                <li><a href="../category-beginners/index.html">Beginners</a></li>
+                
+
+                
+                
+                
+
+
+                
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Series<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../allseries/index.html">Browse all series</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-10-voiceover-tips/index.html">10 voiceover techniques</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-overview-blogging-sins/index.html">7 deadly sins of blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-podcasts/index.html">API documentation podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-api-documentation-survey/index.html">API documentation survey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-author-in-dita-publish-in-wordpress/index.html">Author in DITA and Publish with WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-dallas-stc-summit-videocasts/index.html">Dallas STC Summit videocasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-get-a-job-in-technical-writing/index.html">Get a Job in Technical Writing</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-innovation-in-tech-comm/index.html">Innovation in tech comm</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-jekyll-versus-dita/index.html">Jekyll versus DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-dita-journey/index.html">My DITA journey</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-search-engine-optimization/index.html">Search engine optimization</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-my-journey-to-and-from-wikis/index.html">My journey to and from wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../series-from-overlooked-to-center-stage/index.html">From overlooked to center stage</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Tech Notes<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../toc-javascript/index.html">JavaScript</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-java/index.html">Java</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../toc-apis/index.html">APIs</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+
+                <li class="dropdown">
+                    <a href="index.html#" class="dropdown-toggle" data-toggle="dropdown">Categories<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+
+                        
+                        <li><a href="../category-api-doc/index.html">API documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-beginners/index.html">Beginner tips, career advice</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-blogging/index.html">Blogging</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-creativity/index.html">Creativity</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-dita/index.html">DITA</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-family/index.html">Family</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-findability/index.html">Findability</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-general/index.html">General</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-innovation/index.html">Innovation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-jekyll/index.html">Jekyll</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-podcasts/index.html">Podcasts</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-quick-reference-guides/index.html">Quick reference guides</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-screencasting/index.html">Screencasting</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-user-centered-documentation/index.html">User-centered documentation</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-video/index.html">Video</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-visual-communication/index.html">Visual communication</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-web-design/index.html">Web design</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wikis/index.html">Wikis</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-wordpress/index.html">WordPress</a></li>
+                        
+
+                        
+
+                        
+                        <li><a href="../category-writing/index.html">Writing</a></li>
+                        
+
+                        
+
+                    </ul>
+                </li>
+                
+                
+
+
+
+                <li>
+
+<form class="navbar-form navbar-left" role="search" onsubmit="my_search_google()">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search" id="my-google-search">
+          </div>
+        </form>
+
+                </li>
+
+
+        </div>
+        <!-- /.container -->
+</nav>
+
+
+<!--
+
+-->
+
+    <!-- Page Content -->
+    <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+
+
+<!-- Content Row -->
+<div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-3">
+
+
+        <ul id="mytechsidebar" class="nav">
+<div class="socialMediaButtons">
+<a href="http://feeds.feedburner.com/tomjohnson"><div class="srssfeed"></div></a>
+
+<a href="http://twitter.com/tomjohnson"><div class="stwitter"></div></a>
+
+<a href="https://www.facebook.com/idratherbewriting"><div class="sfacebook"></div></a>
+
+<a href="http://itunes.apple.com/us/podcast/id277365275"><div class="situnes"></div></a>
+
+<a href="https://plus.google.com/+Idratherbewriting/posts"><div class="sgoogleplus"></div></a>
+
+<a href="https://www.linkedin.com/groups?home=&gid=6758055"><div class="slinkedin"></div></a>
+    </div>
+
+<h3 class="sidebar">Newsletter signup</h3>
+<p>Get new posts delivered straight to your inbox.</p>
+<div class="form-group">
+<form style="text-align: center; background-color: whitesmoke; border:1px solid #ccc;padding:3px;text-align:center" action="https://tinyletter.com/tomjohnson1492" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/tomjohnson1492', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"><p><label for="tlemail">Enter your email address</label></p><p><input type="text" style="width:140px" name="email" id="tlemail" /></p><input type="hidden" value="1" name="embed"/><input type="submit" value="Subscribe" class="btn btn-warning"></input><p><small><a href="https://tinyletter.com" target="_blank">powered by TinyLetter</a></small></p>
+
+
+</form>
+</div>
+
+<div class="sidebarAds">
+    <h3 class="sidebar"> Sponsors</h3>
+<script>
+var contents=new Array()
+contents[0]='<a href="http://www.madcapsoftware.com/flare11/?utm_source=IdRatherBeWriting&amp;utm_medium=Banner&amp;utm_campaign=Flare11"><img src="/images/ads/madcap.png" alt="Madcap Software" /></a>'
+contents[1]='<a href="http://www.adobe.com/products/framemaker.html?sdid=KSZHX"><img src="/images/ads/adobe_square.jpg" alt="Adobe Tech Comm Suite" /></a>'
+contents[2]='<a href="http://www.simplifiedenglish.net/"><img src="/images/ads/tedopres.gif" alt="Tedopres" /></a>'
+contents[3]='<a href="http://www.paligo.se/"><img src="/images/ads/paligo.gif" alt="Paligo" /></a>'
+contents[4]='<a href="http://clickhelp.co/"><img src="/images/ads/clickhelp.gif" alt="Clickhelp" /></a>'
+contents[5]='<a href="http://www.drexplain.com/"><img src="/images/ads/drexplain.png" alt="Dr. Explain" /></a>'
+
+var i=0
+//variable used to contain controlled random number
+var random
+//while all of array elements haven't been cycled thru
+while (i<contents.length){
+//generate random num between 0 and arraylength-1
+random=Math.floor(Math.random()*contents.length)
+//if element hasn't been marked as "selected"
+if (contents[random]!="selected"){
+document.write(contents[random])
+//mark element as selected
+contents[random]="selected"
+i++
+}
+}
+</script>
+
+<div style="clear:both;"/>
+<h3 class="sidebar">Text links</h3>
+<ul>
+    <li><a href="http://www.wordpresswriter.com/">Wordpresswriter.com</a></li>
+    <li><a href="http://www.campusgrumbleconnect.com/">College writing tips</a></li>
+    <li><a href="http://one.dealspotr.com/onecom">Onecom</a></li>
+    <li><a href="http://hostpapa.dealspotr.com/hostpapa">Host Papa</a></li>
+    <li><a href="http://justhost.dealspotr.com/justhost">Just Host</a></li>
+</ul>
+<h3 class="sidebar">Recent Comments</h3>
+<div class="recentComments">
+<script type="text/javascript" src="http://idratherbewriting.disqus.com/combination_widget.js?num_items=10&hide_mods=0&color=grey&default_tab=recent&excerpt_length=70"></script>
+
+</ul>
+
+    </div>
+
+
+            <!-- Content Column -->
+            <div class="col-md-9">
+
+                <div class="post-header">
+   <h1 class="post-title-main">DITA: Conditional profiling</h1>
+    
+<!-- this handles the automatic toc. use ## for subheads to auto-generate the on-page minitoc. if you use html tags, you must supply an ID for the heading element in order for it to appear in the minitoc. -->
+<script>
+$( document ).ready(function() {
+  // Handler for .ready() called.
+
+$('#toc').toc({ minimumHeaders: 0, listType: 'ul', showSpeed: 0, headers: 'h2,h3,h4' });
+
+/* this offset helps account for the space taken up by the floating toolbar. */
+$('#toc').on('click', 'a', function() {
+  var target = $(this.getAttribute('href'))
+    , scroll_target = target.offset().top
+
+  $(window).scrollTop(scroll_target - 10);
+  return false
+})
+  
+});
+</script>
+
+<div id="toc"></div>
+
+    <div class="post-content">
+
+   
+
+  <h1 class="title topictitle1">DITA: Conditional profiling</h1>
+<div class="body conbody">
+<p class="shortdesc">You can add attributes to elements and then filter your transforms to include any<br />
+  element that has attributes with certain values.</p>
+<p class="p toc">
+<div class="section">
+<h2 class="title sectiontitle">Available attributes</h2>
+<p class="p">DITA offers a set of standard attributes that you can apply to most elements. The general attributes are as follows:</p>
+<ul class="ul">
+<li class="li"><samp class="ph codeph">audience</samp></li>
+<li class="li"><samp class="ph codeph">platform</samp></li>
+<li class="li"><samp class="ph codeph">product</samp></li>
+<li class="li"><samp class="ph codeph">props</samp></li>
+<li class="li"><samp class="ph codeph">otherprops</samp></li>
+<li class="li"><samp class="ph codeph">rev</samp></li>
+</ul>
+<p class="p">You set the values you want for each attribute. You can’t change the names of the attributes<br />
+    (because they’re part of the DITA schema), but you can edit their values. (The<br />
+     <samp class="ph codeph">props</samp> and <samp class="ph codeph">otherprops</samp> are meant to be generic to adapt to any<br />
+    situation.)</p>
+<p class="p">To set up your attributes and values in OxygenXML, enter the <span class="ph uicontrol">Author</span> view and click the <span class="ph uicontrol">Profiling Attributes</span> button <img class="image" src="../images/profiling_conditions.png" alt="Profiling Attributes button" />. Then select <span class="ph uicontrol">Profiling Settings</span>.</p>
+<p><img class="image" src="../images/dita_profiling_settings.png" alt="Profiling settings" /></p>
+<p class="p">Alternatively, go to <span class="ph menucascade"><span class="ph uicontrol">DITA</span> &gt; <span class="ph uicontrol">Profiling/Conditional Text</span> &gt; <span class="ph uicontrol">Edit Profiling Attributes</span></span>.
+  </p>
+<p class="p">In the Profiling Attributes section, edit the values for each of the attributes.</p>
+<p><img class="image" src="../images/dita_profiling_attributes.png" alt="DITA Profiling attributes" />
+  </div>
+<div class="section">
+<h2 class="title sectiontitle">Creating Profiling Condition Sets</h2>
+<p class="p">While you’re on the Profiling Attributes screen, move to the next section below: Profiling<br />
+    Condition Sets. Here you can define the combinations of the profiling attributes you want for<br />
+    your various transformation scenarios.</p>
+<p><img class="image" src="../images/dita_profile2.png" alt="DITA Profiling condition sets" /></p>
+<p class="p">Now configure your transformation scenarios with the right condition sets:</p>
+<ol class="ol">
+<li class="li">Click the <span class="ph uicontrol">Transform Scenarios</span> button <img class="image" src="../images/transform_scenarios.png" alt="Transform Scenarios button" />.</li>
+<li class="li">Select <span class="ph uicontrol">New</span>.</li>
+<li class="li"> Select <span class="ph uicontrol">DITA OT Transformation</span>.</li>
+<li class="li">Select <span class="ph uicontrol">Webhelp</span> and click <span class="ph uicontrol">OK</span>.</li>
+<li class="li">Name the transformation scenario.</li>
+<li class="li">Click the <span class="ph uicontrol">Filters</span> tab.</li>
+<li class="li">Select the profiling condition set you configured. Then click <span class="ph uicontrol">OK</span>. (You may need to toggle the radio button to another selection and then come back to select Use profiling condition set — not sure if that’s a UI quirk.)</li>
+<li class="li">Select the transform scenario you just created and click <span class="ph uicontrol">Apply<br />
+      Associated</span>.
+<p class="p">For example, if you selected a condition set with<br />
+       <samp class="ph codeph">platform="mac"</samp>, only the topics with <samp class="ph codeph">platform="mac"</samp> would<br />
+      be included. Any elements with <samp class="ph codeph">platform="pc"</samp> or other attribute values would<br />
+      be excluded. </p>
+</li>
+</ol>
+<p class="p">Without Oxygen, you would need create a DITAVAL file that explains what should be excluded. See <a class="xref" href="../ditaval/index.html" title="Ditaval files define conditional processing rules for your transforms.">DITA: Ditaval files (filtering attributes from your transforms)</a> for more details.</p>
+<p class="p">In the DITAVAL file method, you identify the attribute and value and then apply an exclude action. (You don’t apply an include, just exclude.) You can still use DITAVAL files with Oxygen if you want.</p>
+<p class="p">With Oxygen, however, the conditional profiling works more intuitively. In Oxygen, when you<br />
+    create a condition set that includes certain values, other values not selected from that same<br />
+    attribute are excluded. However, if you don’t apply any attribute to content, everything is<br />
+    included.</p>
+</p></div>
+<div class="section">
+<h2 class="title sectiontitle">Applying attributes to elements</h2>
+<p class="p">Now you can start using these attributes almost any DITA element. Suppose you want to apply an attribute to your map so that you can use the same map for each product. You might apply the attributes like this:</p>
+<pre class="pre codeblock language-xml">
+  <strong class="hl-tag" style="color:#000096">&lt;topicref</strong> <span class="hl-attribute" style="color: #ff7935">href</span>=<span class="hl-value" style="color: #993300">"maintaining_brakes_71_fx.html"</span> <span class="hl-attribute" style="color: #ff7935">product</span>=<span class="hl-value" style="color: #993300">"trek"</span> <span class="hl-attribute" style="color: #ff7935">platform</span>=<span class="hl-value" style="color: #993300">"71_fx"</span><strong class="hl-tag" style="color:#000096">/&gt;</strong>     
+  <strong class="hl-tag" style="color:#000096">&lt;topicref</strong> <span class="hl-attribute" style="color: #ff7935">href</span>=<span class="hl-value" style="color: #993300">"maintaining_brakes_72_fx.html"</span> <span class="hl-attribute" style="color: #ff7935">product</span>=<span class="hl-value" style="color: #993300">"trek"</span> <span class="hl-attribute" style="color: #ff7935">platform</span>=<span class="hl-value" style="color: #993300">"72_fx"</span><strong class="hl-tag" style="color:#000096">/&gt;</strong>
+</pre>
+<p class="p">Or to a <samp class="ph codeph">p</samp> element:</p>
+<pre class="pre codeblock">
+   &lt;p product="trek"&gt;You can adjust your brakes by loosening the bolt with a 5mm allen wrench and sliding the brake pads to the distance you want. Then tighten the bolt.&lt;/p&gt;
+  </pre>
+<p class="p">Or to pretty much any other element. If you want to be even more granular, you can surround a word with <samp class="ph codeph">ph</samp> tags (for phrase). The tags can be applied to any word or phrase, so if the element you want doesn’t allow you to apply these general attributes (such as with the <samp class="ph codeph">entry</samp> element in a table), you can just put <samp class="ph codeph">ph</samp> tags inside the element.</p>
+<pre class="pre codeblock">
+  Your bike is equipped with Shimano &lt;ph platform="71_fx"&gt;Ultegra components&lt;/ph&gt;&lt;ph platform="72_fx 73_fx"&gt;105 components&lt;/a&gt;. 
+   </pre>
+<p class="p">When adding multiple values to an attribute, just separate the values with a space.</p>
+<pre class="pre codeblock">
+   &lt;p platform="mac linux"&gt;You have a web server already available in your OS.&lt;/p&gt;
+  </pre>
+</p></div>
+<div class="section">
+<h2 class="title sectiontitle">Viewing conditions in the Author mode</h2>
+<p class="p">When you’re in the Author mode, you can switch to the condition set that you want to see. If you switch to Trek 7.3 FX, only the content that meets that condition set appears in the Author view.</p>
+<p class="p">You can also set it so that the content not included is semi-transparent. This mode makes it<br />
+    easy to edit content that has  conditional profiling. Here’s an example. The content with the<br />
+    attribute for gary_fisher is transparent because I’ve selected to only see the trek content.</p>
+<p><img class="image" src="../images/dita_hidden_text.png" alt="DITA editor" />
+   </div>
+</p></div>
+<div class="related-links">
+<div class="familylinks">
+<div class="parentlink"><strong>Parent topic:</strong> <a class="link" href="../toc_content_reuse/index.html">Content re-use</a></div>
+</div>
+<div class="relinfo"><strong>Related information</strong></p>
+<div><a class="link external" href="http://idratherbewriting.com/2014/06/29/content-re-use-is-so-much-better-with-dita-and-esp-with-oxygenxml/" target="_blank">Content re-use is so much better with DITA (and especially with OxygenXML</a></div>
+</div>
+</div>
+
+
+    
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'idratherbewriting'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+
+   <!-- Footer -->
+      
+
+
+
+
+
+
+
+
+
+
+
+
+<hr class="faded"/> 
+<footer>
+
+
+            <div class="row">
+                <div class="col-lg-12 footer">
+                &copy;2015 I'd Rather Be Writing <img src="../images/orangesquaresmall.png"/> . All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+            </div><!-- /.row -->
+
+        <hr>
+
+    </div>    <!-- /.container -->
+
+</div>
+</body>
+
+<!-- the google_analytics_id gets auto inserted from the config file -->
+
+
+
+<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create','UA-408430-5','auto');ga('require','displayfeatures');ga('send','pageview');</script>
+
+
+
+</html>
+
